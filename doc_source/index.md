@@ -1,0 +1,85 @@
+# AWS Elemental MediaConnect User Guide
+
+-----
+*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+
+-----
+Amazon's trademarks and trade dress may not be used in 
+     connection with any product or service that is not Amazon's, 
+     in any manner that is likely to cause confusion among customers, 
+     or in any manner that disparages or discredits Amazon. All other 
+     trademarks not owned by Amazon are the property of their respective
+     owners, who may or may not be affiliated with, connected to, or 
+     sponsored by Amazon.
+
+-----
+## Contents
++ [What Is AWS Elemental MediaConnect?](what-is.md)
+   + [AWS Elemental MediaConnect Concepts and Terminology](what-is-concepts.md)
+   + [Related Services](what-is-related-services.md)
+   + [Accessing AWS Elemental MediaConnect](what-is-accessing.md)
+   + [Pricing for AWS Elemental MediaConnect](what-is-pricing.md)
+   + [Regions for AWS Elemental MediaConnect](what-is-regions.md)
++ [AWS Elemental MediaConnect Use Cases](use-cases.md)
+   + [Use Case: Contribution](use-cases-contribution.md)
+   + [Use Case: Distribution](use-cases-distribution.md)
+   + [Use Case: Entitlements](use-cases-entitlements.md)
++ [Setting Up AWS Elemental MediaConnect](setting-up.md)
+   + [Step 1. Sign Up for AWS](setting-up-aws-sign-up.md)
+   + [Step 2. Create an Admin IAM User](setting-up-IAM-admin-user.md)
+   + [Step 3. Create Non-Admin IAM Users](setting-up-create-nonadmin-IAM-users.md)
+      + [Step 3a: Create a Policy](setting-up-create-nonadmin-IAM-users-policies.md)
+      + [Step 3b: Create a User Group](setting-up-create-nonadmin-IAM-users-user-groups.md)
+      + [Step 3c: Create Users](setting-up-create-nonadmin-IAM-users-users.md)
+   + [Step 4. Set Up a Policy for AWS Elemental MediaConnect](setting-up-policy-for-mediaconnect.md)
+   + [Step 5. Set Up AWS Elemental MediaConnect as a Trusted Entity](setting-up-mediaconnect-trusted-entity.md)
+   + [Step 6. Set Up Encryption (optional)](setting-up-encryption.md)
+   + [Step 7. Install the AWS CLI (optional)](setting-up-install-cli.md)
++ [Getting Started with AWS Elemental MediaConnect](getting-started.md)
++ [Flows in AWS Elemental MediaConnect](flows.md)
+   + [Creating a Flow](flows-create.md)
+   + [Viewing a List of Flows](flows-view-list.md)
+   + [Viewing the Details of a Flow](flows-view-details.md)
+   + [Starting a Flow](flows-start.md)
+   + [Stopping a Flow](flows-stop.md)
+   + [Updating a Flow](flows-update.md)
+   + [Deleting a Flow](flows-delete.md)
++ [Sources in AWS Elemental MediaConnect](sources.md)
+   + [Updating the Source of a Flow](source-update.md)
+   + [Confirming the Connection of a Flow to Its Source](source-confirm-connection.md)
++ [Outputs in AWS Elemental MediaConnect](outputs.md)
+   + [Adding Outputs to a Flow](outputs-add.md)
+   + [Viewing a List of Outputs of a Flow](outputs-view-list.md)
+   + [Updating Outputs on a Flow](outputs-update.md)
+   + [Removing Outputs from a Flow](outputs-remove.md)
++ [Entitlements in AWS Elemental MediaConnect](entitlements.md)
+   + [Sharing Content with Other AWS Accounts](entitlements-originator.md)
+      + [Granting an Entitlement on a Flow](entitlements-grant.md)
+      + [Updating an Entitlement](entitlements-update.md)
+      + [Revoking an Entitlement](entitlements-revoke.md)
+   + [Subscribing to Content Provided by Another AWS Account](entitlements-subscriber.md)
++ [Distributing Content Using AWS Elemental MediaConnect](distribute-content.md)
+   + [Distributing Content Across Regions](distribution-across-regions.md)
+   + [Distributing Content to AWS Elemental MediaLive](distribution-to-medialive.md)
++ [Protocols in AWS Elemental MediaConnect](protocols.md)
++ [Security in AWS Elemental MediaConnect](security.md)
+   + [Data Protection for AWS Elemental MediaConnect](data-protection.md)
+      + [Encryption in Transit](encryption-in-transit.md)
+         + [Setting Up Encrypted Sources in AWS Elemental MediaConnect](encryption-in-transit-source.md)
+         + [Setting Up Encrypted Outputs in AWS Elemental MediaConnect](encryption-in-transit-output.md)
+      + [Key Management in AWS Elemental MediaConnect](key-management.md)
+      + [IAM Policy Examples for Secrets in AWS Secrets Manager](key-management-iam-policy-examples-for-asm-secrets.md)
+   + [Authentication and Access Control for AWS Elemental MediaConnect](auth-and-access-control.md)
+      + [What is Authentication?](auth_access_what-is-authentication.md)
+      + [What is Access Control?](auth_access_what-is-access-control.md)
+      + [What are Policies?](auth_access_what-are-policies.md)
++ [Monitoring AWS Elemental MediaConnect](monitor.md)
+   + [Monitoring AWS Elemental MediaConnect with Amazon CloudWatch Metrics](monitor-with-cloudwatch.md)
+      + [AWS Elemental MediaConnect Metrics](monitor-with-cloudwatch-metrics.md)
+   + [Logging AWS Elemental MediaConnect API Calls with AWS CloudTrail](logging-using-cloudtrail.md)
++ [AWS CLI Commands for AWS Elemental MediaConnect](cli-commands.md)
++ [Best Practices for AWS Elemental MediaConnect](best-practices.md)
++ [Limits in AWS Elemental MediaConnect](limits.md)
++ [AWS Elemental MediaConnect Related Information](resources.md)
++ [Document History for User Guide](doc-history.md)
++ [AWS Glossary](glossary.md)

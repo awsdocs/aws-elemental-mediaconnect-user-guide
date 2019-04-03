@@ -1,0 +1,6 @@
+# Protocols in AWS Elemental MediaConnect<a name="protocols"></a>
+
+AWS Elemental MediaConnect supports three protocols for incoming \(source\) and outgoing \(output\) live video streams:
++ **Zixi** is the most reliable protocol offered\. We strongly recommend that you use this protocol for your AWS Elemental MediaConnect sources and outputs whenever possible, due to its reliability and ability to stream over longer distances\. If your encoder is not capable of using Zixi, you can use Zixi feeder software\. The Zixi receiver software \(a version specifically for AWS Elemental MediaConnect is available [here](http://www.zixi.com/aws-mediaconnect-download)\) can also be used to receive Zixi protocol in environments and on devices that don't support Zixi natively\. If you are setting up multiple flows for distribution, we recommend that you use Zixi as the protocol to send content between flows\. 
++ **RTP\-FEC** has wide applicability and forward error correction \(FEC\) to self\-heal any corruption and packet loss\. Using this protocol takes more bandwidth than RTP without FEC\.
++ **RTP** has wide applicability and takes less bandwidth than RTP\-FEC\. 
