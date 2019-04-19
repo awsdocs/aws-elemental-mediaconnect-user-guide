@@ -10,6 +10,7 @@ You can view a flow's details, such as ARN, Availability Zone, status, source, e
 
    The details page for that flow appears\. This page is divided into three tabs:
    + The **Source** tab shows details about the source for this flow, including an indication of whether the flow is connected to the source\. 
+   + The **Source** tab shows details about the source for this flow, including an indication of whether the flow is connected to the source\. 
    + The **Entitlements** tab shows any entitlements that you have granted on this flow\.
    + The **Outputs** tab shows details for each output that you created for this flow\.
 

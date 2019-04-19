@@ -13,4 +13,5 @@ It is important to manage the number of outputs and entitlements that you create
 + [Starting a Flow](flows-start.md)
 + [Stopping a Flow](flows-stop.md)
 + [Updating a Flow](flows-update.md)
++ [Managing Tags on a Flow](flows-manage-tags.md)
 + [Deleting a Flow](flows-delete.md)

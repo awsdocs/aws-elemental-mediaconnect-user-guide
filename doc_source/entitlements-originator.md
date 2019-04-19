@@ -11,4 +11,5 @@ After you grant an entitlement, you provide information about the entitlement \(
 **Topics**
 + [Granting an Entitlement on a Flow](entitlements-grant.md)
 + [Updating an Entitlement](entitlements-update.md)
++ [Managing Tags on an Entitlement](entitlements-manage-tags.md)
 + [Revoking an Entitlement](entitlements-revoke.md)

@@ -8,4 +8,5 @@ Another way outputs can be added to a flow is from an entitlement\. You can [gra
 + [Adding Outputs to a Flow](outputs-add.md)
 + [Viewing a List of Outputs of a Flow](outputs-view-list.md)
 + [Updating Outputs on a Flow](outputs-update.md)
++ [Managing Tags on an Output](outputs-manage-tags.md)
 + [Removing Outputs from a Flow](outputs-remove.md)
