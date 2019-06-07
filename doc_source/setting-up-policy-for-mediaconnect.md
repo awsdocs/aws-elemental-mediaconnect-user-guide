@@ -32,7 +32,7 @@ If any of your sources or outputs are encrypted, you must store your encryption 
    }
    ```
 
-   In the `Resource` section, each line represents the ARN of a different secret that you have created\. For more examples, see [IAM Policy Examples for Secrets in AWS Secrets Manager](key-management-iam-policy-examples-for-asm-secrets.md)\.
+   In the `Resource` section, each line represents the ARN of a different secret that you have created\. For more examples, see [IAM Policy Examples for Secrets in AWS Secrets Manager](iam-policy-examples-asm-secrets.md)\.
 
 1. Choose **Review policy**\.
 
