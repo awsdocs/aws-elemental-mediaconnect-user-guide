@@ -1,8 +1,8 @@
 # Logging and Monitoring<a name="incident-response"></a>
 
-This section provides an overview of the options for logging and monitoring in AWS Elemental MediaConnect for security purposes\. For more information about logging and monitoring in AWS Elemental MediaConnect see [Monitoring AWS Elemental MediaConnect](monitor.md)\.
+This section provides an overview of the options for logging and monitoring in AWS Elemental MediaConnect for security purposes\. For more information about logging and monitoring in MediaConnect see [Monitoring AWS Elemental MediaConnect](monitor.md)\.
 
-Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Elemental MediaConnect and your AWS solutions\. You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multi\-point failure if one occurs\. AWS provides several tools for monitoring your AWS Elemental MediaConnect resources and responding to potential incidents:
+Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Elemental MediaConnect and your AWS solutions\. You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multi\-point failure if one occurs\. AWS provides several tools for monitoring your MediaConnect resources and responding to potential incidents:
 
 ## Amazon CloudWatch Alarms<a name="incident-response-cloudwatch-alarms"></a>
 
@@ -10,7 +10,7 @@ Using CloudWatch alarms, you watch a single metric over a time period that you s
 
 ## AWS CloudTrail Logs<a name="incident-response-cloudtrail-logs"></a>
 
-CloudTrail provides a record of actions taken by a user, role, or an AWS service in AWS Elemental MediaConnect\. Using the information collected by CloudTrail, you can determine the request that was made to AWS Elemental MediaConnect, the IP address from which the request was made, who made the request, when it was made, and additional details\. For more information, see [Logging API Calls with AWS CloudTrail](logging-using-cloudtrail.md)\.
+CloudTrail provides a record of actions taken by a user, role, or an AWS service in AWS Elemental MediaConnect\. Using the information collected by CloudTrail, you can determine the request that was made to MediaConnect, the IP address from which the request was made, who made the request, when it was made, and additional details\. For more information, see [Logging API Calls with AWS CloudTrail](logging-using-cloudtrail.md)\.
 
 ## AWS Trusted Advisor<a name="incident-response-trust-advisor"></a>
 

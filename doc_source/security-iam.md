@@ -77,7 +77,7 @@ When multiple types of policies apply to a request, the resulting permissions ar
 ## Learn More<a name="security_iam_learn-more"></a>
 
 For more information about identity and access management for MediaConnect, continue to the following pages:
-+ [How AWS Elemental MediaConnect Works with IAM](security_iam_service-with-iam.md)
++ [How MediaConnect Works with IAM](security_iam_service-with-iam.md)
 + [Identity\-Based Policy Examples](security_iam_id-based-policy-examples.md)
 + [Resource\-Based Policy Examples](security_iam_resource-based-policy-examples.md)
 + [Policy Examples for Secrets in AWS Secrets Manager](iam-policy-examples-asm-secrets.md)

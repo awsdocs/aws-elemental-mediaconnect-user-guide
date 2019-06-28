@@ -3,11 +3,11 @@
 A flow consists of one source, a name, and an Availability Zone\. The ability to choose an Availability Zone allows you to create multiple flows within an AWS Region for redundancy\. After you create a flow, you can add up to 20 outputs and up to 50 entitlements\.
 
 **Important**  
-If the source or any of the outputs of your flow require encryption, [store the encryption key](key-management.md#key-management-store-encryption-keys) in AWS Secrets Manager before you begin this procedure\. 
+If the source of your flow requires encryption, [set up encryption](encryption-static-key-set-up.md) before you begin this procedure\. 
 
 **To create a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose **Create flow**\.
 
@@ -62,9 +62,9 @@ If you leave this field blank, the service uses the source name as the stream ID
 
       1. For **Decryption type**, choose **Static key**\.
 
-      1. For **Role ARN**, specify the ARN of the role that you created during setup \(when you [set up AWS Elemental MediaConnect as a trusted entity](setting-up-mediaconnect-trusted-entity.md)\)\.
+      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
 
-      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](key-management.md#key-management-store-encryption-keys)\.
+      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
 
       1. For **Decryption algorithm**, choose the type of encryption that was used to encrypt the source\.
 

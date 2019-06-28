@@ -3,7 +3,7 @@
 You can view a list of your AWS Elemental MediaConnect flows in a specific AWS Region\.
 
 **To view a list of flows \(console\)**
-+ Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
++ Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
   The **Flows** page appears, listing all the flows that are associated with your account\.
 

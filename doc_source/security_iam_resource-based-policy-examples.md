@@ -1,10 +1,10 @@
 # AWS Elemental MediaConnect Resource\-Based Policy Examples<a name="security_iam_resource-based-policy-examples"></a>
 
-To access the AWS Elemental MediaConnect console, you must have a minimum set of permissions that allows you to list and view details about the AWS Elemental MediaConnect resources in your AWS account\. The IAM policies in this section show examples of policies that allow specific actions on resources in AWS Elemental MediaConnect\.
+To access the AWS Elemental MediaConnect console, you must have a minimum set of permissions that allows you to list and view details about the MediaConnect resources in your AWS account\. The IAM policies in this section show examples of policies that allow specific actions on resources in AWS Elemental MediaConnect\.
 
 ## Allow Read Access to All Resources in AWS Elemental MediaConnect<a name="iam-policy-examples-for-mediaconnect-actions-read-only-all-resources"></a>
 
-To access the AWS Elemental MediaConnect console, you must have a policy that defines which actions you are allowed to take on AWS Elemental MediaConnect resources in your AWS account\. The IAM policy below provides the following permissions:
+To access the AWS Elemental MediaConnect console, you must have a policy that defines which actions you are allowed to take on MediaConnect resources in your AWS account\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:List*` and `mediaconnect:Describe*` actions allow read\-only access to all resources that you create in AWS Elemental MediaConnect\.
 + The section for the `ec2:DescribeAvailabilityZones` action allows the service to obtain information about which Availability Zone the flow is in\. This portion of the policy is required\.
 + The section for the `cloudwatch:GetMetricStatistics` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
@@ -49,7 +49,7 @@ To access the AWS Elemental MediaConnect console, you must have a policy that de
 
 ## Allow All AWS Elemental MediaConnect Actions on a Specific Resource<a name="iam-policy-examples-for-mediaconnect-actions-all-actions-specific-resource"></a>
 
-Every user of AWS Elemental MediaConnect must have a policy that defines permissions on AWS Elemental MediaConnect resources\. The IAM policy below provides the following permissions:
+Every user of AWS Elemental MediaConnect must have a policy that defines permissions on MediaConnect resources\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:*` action all AWS Elemental MediaConnect actions on a specific resource\.
 + The section for the `ec2:DescribeAvailabilityZones` action allows the service to obtain information about which Availability Zone the flow is in\. This portion of the policy is required and should apply to all resources\.
 + The section for the `cloudwatch:GetMetricStatistics` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required and should apply to all resources\.

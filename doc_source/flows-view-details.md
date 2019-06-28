@@ -4,7 +4,7 @@ You can view a flow's details, such as ARN, Availability Zone, status, source, e
 
 **To view the details of a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that you want to view\.
 

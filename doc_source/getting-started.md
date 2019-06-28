@@ -23,7 +23,7 @@ Before you can use AWS Elemental MediaConnect, you need an AWS account and the a
 After you set up your AWS account and create IAM users and roles, you sign in to the console for AWS Elemental MediaConnect\.
 
 **To access AWS Elemental MediaConnect**
-+ Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
++ Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 ## Step 2: Create a Flow<a name="getting-started-create-flow"></a>
 

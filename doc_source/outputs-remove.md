@@ -4,7 +4,7 @@ You can remove outputs that you added to the flow\. If AWS Elemental MediaConnec
 
 **To remove an output from a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that is associated with the output that you want to remove\.
 

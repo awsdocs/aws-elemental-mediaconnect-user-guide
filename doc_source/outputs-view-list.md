@@ -4,7 +4,7 @@ You can view a list of the flow's outputs, along with the setup that is associat
 
 **To view a list of outputs on an existing flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that you want to view\.
 

@@ -4,7 +4,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
 **To add tags to a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that you want to add tags to\.
 
@@ -24,7 +24,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
 **To edit tags on a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that has the tags you want to edit\.
 
@@ -40,7 +40,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
 **To remove tags from a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that you want to add tags to\.
 

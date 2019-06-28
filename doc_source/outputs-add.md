@@ -7,7 +7,7 @@ If you intend to set up an entitlement for an output, do not create the output\.
 
 **To add an output to a flow \(console\)**
 
-1. Open the AWS Elemental MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
+1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
 1. On the **Flows** page, choose the name of the flow that you want to add an output to\.
 
@@ -32,7 +32,7 @@ If you intend to set up an entitlement for an output, do not create the output\.
 
    1. For **Port**, choose the port that you want to use when the content is distributed to this output\.
 
-   1. For **Smoothing latency**, specify the transmission rate for the output\. We recommend that you specify a value between 100 and 1,000 ms\. If you leave this field blank, the service uses the default value of 100 ms\.
+   1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiving device is unable to process the stream properly, specify a value between 100 and 1,000 ms\. This way, MediaConnect will attempt to correct jitter from the flow source\. If you leave this field blank, the service uses the default value of 0 ms\.
 
 ------
 #### [ Zixi push ]
@@ -55,9 +55,9 @@ If you leave this field blank, the service uses the output name as the stream ID
 
       1. For **Encryption type**, choose **Static key**\.
 
-      1. For **Role ARN**, specify the ARN of the role that you created during setup \(when you [set up AWS Elemental MediaConnect as a trusted entity](setting-up-mediaconnect-trusted-entity.md)\)\.
+      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
 
-      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](key-management.md#key-management-store-encryption-keys)\.
+      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
 
       1. For **Encryption algorithm**, choose the type of encryption that you want to use to encrypt the source\.
 
