@@ -93,22 +93,21 @@ The flow doesn't start automatically\. You must [start the flow](flows-start.md)
 
    ```
    {
-     "Description": "Awards show in NYC on 2018-11-27",
      "Name": "AwardsShow",
      "Outputs": [
        {
-         "Address": "198.51.100.5",
+         "Destination": "198.51.100.5",
          "Description": "RTP output",
          "Name": "RTPOutput",
          "Protocol": "rtp",
-         "Port": 5020,
-       },
+         "Port": 5020
+       }
      ],
      "Source": {
        "Name": "AwardsShowSource",
        "Protocol": "rtp-fec",
-       "WhitelistCidr": "10.24.34.0/23",
-     },
+       "WhitelistCidr": "10.24.34.0/23"
+     }
    }
    ```
 
@@ -123,30 +122,36 @@ The flow doesn't start automatically\. You must [start the flow](flows-start.md)
    ```
    {
      "Flow": {
+       "EgressIp": "203.0.113.0",
        "AvailabilityZone": "us-east-1d",
-       "Entitlements": [
-       ],
-       "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
        "Name": "AwardsShow",
-       "Outputs": [
-         {
-           "Address": "198.51.100.12,
-           "Description": "RTP-FEC Output",
-           "Name": "AwardsShowOutput",
-           "OutputArn": "arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:AwardsShowOutput",
-           "Port": 5040,
-           "Protocol": "rtp-fec",
-         },
-       ],
-       "Source": {
-         "IngestIp": "198.51.100.15",
-         "IngestPort": 5010,
-         "Name": "AwardsShowSource",
-         "Protocol": "rtp-fec",
-         "SourceArn": "arn:aws:mediaconnect:us-east-1:111122223333:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:AwardsShowSource",
-         "WhitelistCidr": "10.24.34.0/23",
-       },
        "Status": "STANDBY",
-     },
+       "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow",
+       "Source": {
+               "SourceArn": "arn:aws:mediaconnect:us-east-1:111122223333:source:3-4aBC56dEF78hiJ90-4de5fG6Hi78Jk:AwardsShowSource",                                       
+               "Name": "AwardsShowSource",
+               "IngestPort": 5000,
+               "WhitelistCidr": "10.24.34.0/23",
+               "IngestIp": "198.51.100.15",
+               "Transport": {
+                   "Protocol": "rtp-fec",
+                   "MaxBitrate": 80000000
+               }
+           },
+           "Entitlements": [],
+           "Outputs": [
+               {
+                   "Port": 5020,
+                   "Name": "AwardsShowOutput",
+                   "OutputArn": "arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:AwardsShowOutput",                                          
+                   "Description": "RTP-FEC Output",
+                   "Destination": "198.51.100.5",
+                   "Transport": {
+                       "Protocol": "rtp",
+                       "SmoothingLatency": 0
+                   }
+               }
+           ]
+       }
    }
    ```

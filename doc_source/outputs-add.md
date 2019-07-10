@@ -32,7 +32,7 @@ If you intend to set up an entitlement for an output, do not create the output\.
 
    1. For **Port**, choose the port that you want to use when the content is distributed to this output\.
 
-   1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiving device is unable to process the stream properly, specify a value between 100 and 1,000 ms\. This way, MediaConnect will attempt to correct jitter from the flow source\. If you leave this field blank, the service uses the default value of 0 ms\.
+   1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiver can't process the stream properly, specify a value between 100 and 1,000 ms\. This way, MediaConnect attempts to correct jitter from the flow source\. If you keep this field blank, the service uses the default value of 0 ms\.
 
 ------
 #### [ Zixi push ]

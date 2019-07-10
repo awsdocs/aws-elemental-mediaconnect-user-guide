@@ -9,7 +9,7 @@ During setup, [you create an IAM policy](encryption-static-key-set-up.md#encrypt
 
 ## Allow Read Access to Specific Secrets in AWS Secrets Manager<a name="iam-policy-examples-asm-specific-secrets"></a>
 
-The following IAM policy allows read access to specific resources \(secrets\) that you create in AWS Secrets Manager:
+The following IAM policy allows read access to specific resources \(secrets\) that you create in AWS Secrets Manager\.
 
 ```
 {
@@ -35,7 +35,7 @@ The following IAM policy allows read access to specific resources \(secrets\) th
 
 ## Allow Read Access to All Secrets Created in a Specific Region in AWS Secrets Manager<a name="iam-policy-examples-asm-secrets-in-a-region"></a>
 
-The following IAM policy allows read access to all secrets that you create in a specific AWS Region in AWS Secrets Manager\. This policy applies to resources that you have created already and all resources that you create in the future in the specified Region:
+The following IAM policy allows read access to all secrets that you create in a specific AWS Region in AWS Secrets Manager\. This policy applies to resources that you have created already and all resources that you create in the future in the specified Region\.
 
 ```
 {
@@ -59,7 +59,7 @@ The following IAM policy allows read access to all secrets that you create in a 
 
 ## Allow Read Access to All Resources in AWS Secrets Manager<a name="iam-policy-examples-asm-secrets-all"></a>
 
-The following IAM policy allows read access to all resources that you create in AWS Secrets Manager\. This policy applies to resources that you have created already and all resources that you create in the future:
+The following IAM policy allows read access to all resources that you create in AWS Secrets Manager\. This policy applies to resources that you have created already and all resources that you create in the future\.
 
 ```
 {
