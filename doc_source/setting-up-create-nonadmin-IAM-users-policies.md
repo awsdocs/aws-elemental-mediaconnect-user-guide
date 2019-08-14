@@ -6,101 +6,99 @@ Create two policies for AWS Elemental MediaConnect: one to provide read/write ac
 
 1. Use your AWS account ID or account alias, and the credentials for your admin IAM user, to sign in to the [IAM console](https://console.aws.amazon.com/iam)\.
 
-1. In the navigation pane of the console, choose **Policies**, and then choose **Create policy**\.
+1. In the navigation pane of the console, choose **Policies**\.
 
-1. Choose the **JSON** tab and paste the following policy:
+1. On the **Policies** page, create a policy named `MediaConnectAllAccess` that allows all actions on all resources in AWS Elemental MediaConnect:
 
-   ```
-   {
-       "Version": "2012-10-17",
-       "Statement": [
-           {
-               "Action": [
-                   "mediaconnect:*"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "ec2:DescribeAvailabilityZones"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "cloudwatch:GetMetricData"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "cloudwatch:GetMetricStatistics"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "iam:PassRole"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           }
-       ]
-   }
-   ```
+   1. Choose **Create policy**\.
 
-   This policy allows all actions on all resources in AWS Elemental MediaConnect\.
+   1. Choose the **JSON** tab and paste the following policy:
 
-1. Choose **Review policy**\.
+      ```
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Action": [
+                      "mediaconnect:*"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              },
+              {
+                  "Action": [
+                      "ec2:DescribeAvailabilityZones"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              },
+               {
+                  "Action": [
+                      "cloudwatch:GetMetricStatistics"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              },
+              {
+                  "Action": [
+                      "iam:PassRole"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              }
+          ]
+      }
+      ```
 
-1. On the **Review policy** page, for **Name**, enter **MediaConnectAllAccess**, and then choose **Create policy**\.
+      This policy allows all actions on all resources in AWS Elemental MediaConnect\.
 
-1. On the **Policies** page, repeat steps 2\-5 to create a read\-only policy\. Use the following policy, and name it **MediaConnectReadOnlyAccess**:
+   1. Choose **Review policy**\.
 
-   ```
-   {
-       "Version": "2012-10-17",
-       "Statement": [
-           {
-               "Action": [
-                   "mediaconnect:List*",
-                   "mediaconnect:Describe*"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "ec2:DescribeAvailabilityZones"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "cloudwatch:GetMetricData"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "cloudwatch:GetMetricStatistics"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           },
-           {
-               "Action": [
-                   "iam:PassRole"
-               ],
-               "Effect": "Allow",
-               "Resource": "*"
-           }
-       ]
-   }
-   ```
+   1. On the **Review policy** page, for **Name**, enter **MediaConnectAllAccess**, and then choose **Create policy**\.
+
+1. On the **Policies** page, create a read\-only policy named `MediaConnectReadOnlyAccess` for AWS Elemental MediaConnect:
+
+   1. Choose **Create policy**\.
+
+   1. Choose the **JSON** tab and paste the following policy:
+
+      ```
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Action": [
+                      "mediaconnect:List*",
+                      "mediaconnect:Describe*"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              },
+              {
+                  "Action": [
+                      "ec2:DescribeAvailabilityZones"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              },
+               {
+                  "Action": [
+                      "cloudwatch:GetMetricStatistics"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              },
+              {
+                  "Action": [
+                      "iam:PassRole"
+                  ],
+                  "Effect": "Allow",
+                  "Resource": "*"
+              }
+          ]
+      }
+      ```
+
+   1. Choose **Review policy**\.
+
+   1. On the **Review policy** page, for **Name**, enter **MediaConnectReadOnlyAccess**, and then choose **Create policy**\.

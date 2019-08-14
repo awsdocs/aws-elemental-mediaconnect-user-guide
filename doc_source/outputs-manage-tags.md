@@ -16,7 +16,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
 1. Choose **Manage tags**\.
 
-1. Choose **Manage tags**, and then choose **Add tag**\.
+1. Choose **Manage tags** again, and then choose **Add tag**\.
 
 1. For each tag that you want to add, do the following:
 
@@ -40,7 +40,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
 1. In the **Details** section, choose **Manage tags**\.
 
-1. Choose **Manage tags**\.
+1. Choose **Manage tags** again\.
 
 1. Update the tags, as needed\.
 
@@ -60,7 +60,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
 1. In the **Details** section, choose **Manage tags**\.
 
-1. Choose **Manage tags**\.
+1. Choose **Manage tags** again\.
 
 1. Choose **Remove tag** next to each tag that you want to delete\.
 

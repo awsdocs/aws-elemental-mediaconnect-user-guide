@@ -19,7 +19,7 @@ You can update outputs on a flow, even when the flow is active\.
 1. Make the appropriate changes, and then choose **Save**\.
 
 **To update a flow output \(AWS CLI\)**
-+ In the AWS CLI, use the **update\-flow\-output** command:
++ In the AWS CLI, use the `update-flow-output` command:
 
   ```
   aws mediaconnect update-flow-output --output-arn "arn:aws:mediaconnect:us-east-1:111122223333:output:2-3aBC45dEF67hiJ89-c34de5fG678h:NYCfeed" --port 5040 --region us-east-1 --profile PMprofile

@@ -4,20 +4,36 @@ You can create a user group for each policy and assign users to a group rather t
 
 **To create user groups**
 
-1. In the navigation pane of the IAM console, choose **Groups**, and then choose **Create New Group**\. 
+1. In the navigation pane of the IAM console, choose **Groups**\.
 
-1. On the **Set Group Name** page, enter a name for the group, such as **MediaConnectAdmins**\.
+1. On the **Groups** page, create an administrator group using the `MediaConnectAllAccess` policy:
 
-1. Choose **Next Step**\.
+   1. Choose **Create New Group**\.
 
-1. On the **Attach Policy** page, for **Filter**, choose **Customer Managed**\.
+   1. On the **Set Group Name** page, enter a name for the group, such as **MediaConnectAdmins**\.
 
-1. In the policy list, choose the **MediaConnectAllAccess** policy that you created in the procedure in [Step 3a: Create a Policy](setting-up-create-nonadmin-IAM-users-policies.md)\.
+   1. Choose **Next Step**\.
 
-1. Choose **Next Step**\.
+   1. On the **Attach Policy** page, for **Filter**, choose **Customer Managed**\.
 
-1. On the **Review** page, verify that the correct policies are added to this group, and then choose **Create Group**\.
+   1. In the policy list, choose the **MediaConnectAllAccess** policy that you created in the procedure in [Step 3a: Create a Policy](setting-up-create-nonadmin-IAM-users-policies.md)\.
 
-1. On the **Groups** page, repeat steps 1\-7 to create a user group with read\-only permissions\. Use the following guidelines:
-   + In step 2, enter a group name such as **MediaConnectReaders**\.
-   + In step 4, choose the **MediaConnectReadOnlyAccess** policy that you created in the procedure in [Step 3a: Create a Policy](setting-up-create-nonadmin-IAM-users-policies.md)\.
+   1. Choose **Next Step**\.
+
+   1. On the **Review** page, verify that the correct policies are added to this group, and then choose **Create Group**\.
+
+1. On the **Groups** page, create a read\-only group using the `MediaConnectReaders` policy:
+
+   1. Choose **Create New Group**\.
+
+   1. On the **Set Group Name** page, enter a name for the group, such as **MediaConnectReaders**\.
+
+   1. Choose **Next Step**\.
+
+   1. On the **Attach Policy** page, for **Filter**, choose **Customer Managed**\.
+
+   1. In the policy list, choose the **MediaConnectReadOnlyAccess** policy that you created in the procedure in [Step 3a: Create a Policy](setting-up-create-nonadmin-IAM-users-policies.md)\.
+
+   1. Choose **Next Step**\.
+
+   1. On the **Review** page, verify that the correct policies are added to this group, and then choose **Create Group**\.

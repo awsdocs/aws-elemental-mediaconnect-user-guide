@@ -18,8 +18,8 @@ AWS Elemental MediaConnect allows you to create multiple flows with the same nam
 1. For **Availability Zone**, choose an Availability Zone for your flow\. Use this option when you are setting up redundant flows\. Otherwise, you can leave this as **Any** and the service will randomly assign an Availability Zone within the current AWS Region\.
 
 1. Determine which type of source you are using:
-   + A standard source with RTP or RTP\-FEC protocol
-   + A standard source with Zixi push protocol
+   + A standard source with the RTP or RTP\-FEC protocol
+   + A standard source with the Zixi push protocol
    + An entitled source \(a flow that is owned by another AWS account and has granted an entitlement to your account\)
 
 1. For specific instructions based on your source type and protocol, choose one of the following tabs:

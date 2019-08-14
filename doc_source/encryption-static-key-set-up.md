@@ -9,7 +9,7 @@ Before you can create a flow with an encrypted source or an output or entitlemen
 **[Step 3](#encryption-static-key-set-up-create-iam-role)** – Create an IAM role and attach the policy that you created in step 2\. Next, set up AWS Elemental MediaConnect as a trusted entity that is allowed to assume this role and make requests on behalf of your account\.
 
 **Note**  
-Static key encryption is supported only for entitlements, and for sources and outputs that use Zixi protocol\.
+Static key encryption is supported only for entitlements, and for sources and outputs that use the Zixi protocol\.
 
 ## Step 1: Store Your Encryption Key in AWS Secrets Manager<a name="encryption-static-key-set-up-store-key"></a>
 
