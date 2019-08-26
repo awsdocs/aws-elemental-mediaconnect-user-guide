@@ -10,3 +10,4 @@ Another way that you can add outputs to a flow is from an entitlement\. You can 
 + [Updating Outputs on a Flow](outputs-update.md)
 + [Managing Tags on an Output](outputs-manage-tags.md)
 + [Removing Outputs from a Flow](outputs-remove.md)
++ [Output Destinations](destinations.md)

@@ -3,7 +3,7 @@
 You can protect your data using tools that are provided by AWS\. AWS Elemental MediaConnect can decrypt your incoming video \(source\) and encrypt your outgoing video \(outputs and entitlements\)\. 
 
  You have two options for encrypting content in transit: 
-+ **Static key encryption:** You can use this option to encrypt sources, outputs, and entitlements\. You store your encryption key in AWS Secrets Manager, and then you give AWS Elemental MediaConnect permission to obtain the encryption key from Secrets Manager\. 
++ **Static key encryption:** You can use this option to encrypt sources, outputs, and entitlements\. You store your encryption key in AWS Secrets Manager, and then you give MediaConnect permission to obtain the encryption key from Secrets Manager\. 
 
   Advantages: You have full control over storage of the encryption key for your account\. The key is stored in AWS Secrets Manager, where you can access it any time\.
 

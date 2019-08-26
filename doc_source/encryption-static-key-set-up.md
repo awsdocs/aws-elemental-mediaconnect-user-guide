@@ -102,7 +102,7 @@ In [step 2](#encryption-static-key-set-up-create-iam-policy), you created an IAM
 
 1. For **Choose the service that will use this role**, choose **EC2**\. 
 
-   You choose EC2 because AWS Elemental MediaConnect is not currently included in this list\. Choosing EC2 lets you create a role\. In a later step, you change this role to include AWS Elemental MediaConnect instead of EC2\.
+   You choose EC2 because AWS Elemental MediaConnect is not currently included in this list\. Choosing EC2 lets you create a role\. In a later step, you change this role to include MediaConnect instead of EC2\.
 
 1. Choose **Next: Permissions**\.
 

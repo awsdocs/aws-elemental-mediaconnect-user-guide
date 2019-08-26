@@ -1,8 +1,8 @@
 # Setting Up AWS Elemental MediaConnect<a name="setting-up"></a>
 
-Before you start using AWS Elemental MediaConnect, you must sign up for AWS \(if you don’t already have an AWS account\) and create IAM users and roles to allow access to AWS Elemental MediaConnect\. This includes creating an IAM role for yourself\. If you want to use encryption to protect your content, you also must store your encryption keys in AWS Secrets Manager, and then give MediaConnect permission to obtain the keys from your Secrets Manager account\.
+Before you start using AWS Elemental MediaConnect, you must sign up for AWS \(if you don’t already have an AWS account\) and create IAM users and roles to allow access to MediaConnect\. This includes creating an IAM role for yourself\. If you want to use encryption to protect your content, you also must store your encryption keys in AWS Secrets Manager, and then give MediaConnect permission to obtain the keys from your Secrets Manager account\.
 
-This section guides you through the steps required to configure users to access MediaConnect\. For background and additional information about identity and access management for MediaConnect, see [Identity and Access Management for AWS Elemental MediaConnect](security-iam.md)\.
+This section guides you through the steps required to configure users to access AWS Elemental MediaConnect\. For background and additional information about identity and access management for MediaConnect, see [Identity and Access Management for AWS Elemental MediaConnect](security-iam.md)\.
 
 **Topics**
 + [Step 1\. Sign Up for AWS](setting-up-aws-sign-up.md)

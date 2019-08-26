@@ -52,6 +52,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Updating Outputs on a Flow](outputs-update.md)
    + [Managing Tags on an Output](outputs-manage-tags.md)
    + [Removing Outputs from a Flow](outputs-remove.md)
+   + [Output Destinations](destinations.md)
 + [Entitlements in AWS Elemental MediaConnect](entitlements.md)
    + [Sharing Content with Other AWS Accounts](entitlements-originator.md)
       + [Granting an Entitlement on a Flow](entitlements-grant.md)

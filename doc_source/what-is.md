@@ -1,8 +1,8 @@
 # What Is AWS Elemental MediaConnect?<a name="what-is"></a>
 
-AWS Elemental MediaConnect is a service that makes it easy for broadcasters and other premium video providers to reliably ingest live video into the AWS Cloud and distribute it to multiple destinations inside or outside the AWS Cloud\. AWS Elemental MediaConnect provides the reliability, security, and visibility that you are used to with existing distribution methods, combined with the flexibility and cost\-effectiveness that internet\-based transmission provides\.
+AWS Elemental MediaConnect is a service that makes it easy for broadcasters and other premium video providers to reliably ingest live video into the AWS Cloud and distribute it to multiple destinations inside or outside the AWS Cloud\. MediaConnect provides the reliability, security, and visibility that you are used to with existing distribution methods, combined with the flexibility and cost\-effectiveness that internet\-based transmission provides\.
 
-For ingest, you send content to AWS Elemental MediaConnect from an on\-premises contribution encoder, which encodes your video into a single, high\-quality mezzanine file for contribution into the cloud\. After the video is in the AWS Cloud, AWS Elemental MediaConnect sends it to outputs that you specify, such as a cloud encoder, another AWS Elemental MediaConnect flow, or an on\-premises destination\.
+For ingest, you send content to AWS Elemental MediaConnect from an on\-premises contribution encoder, which encodes your video into a single, high\-quality mezzanine file for contribution into the cloud\. After the video is in the AWS Cloud, MediaConnect sends it to outputs that you specify, such as a cloud encoder, another MediaConnect flow, or an on\-premises destination\.
 
 The following illustration shows the basic workflow of how AWS Elemental MediaConnect ingests live video into the cloud and securely distributes it to multiple destinations\.
 

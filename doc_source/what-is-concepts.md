@@ -37,7 +37,7 @@ Protocol
 A set of rules used for file transmission\. AWS Elemental MediaConnect provides protocol options \(such as Zixi, RTP, and RTP\-FEC\) that implement a quality of service \(QoS\) layer to enable the service to work with mezzanine\-quality live video\.
 
 Receiver  
-The recipient of a stream from AWS Elemental MediaConnect\. A receiver is any entity, inside or outside of the AWS Cloud, that can receive RTP or Zixi streams\. This might be an affiliate, a cloud encoder, or another AWS Elemental MediaConnect flow\.
+The recipient of a stream from AWS Elemental MediaConnect\. A receiver is any entity, inside or outside of the AWS Cloud, that can receive RTP or Zixi streams\. This might be an affiliate, a cloud encoder, or another MediaConnect flow\.
 
 Replication  
 The result of creating a flow with more than one output\. The source is replicated to produce multiple outputs\. Replication is useful when you want to distribute your video streams to multiple workflows within your own account or share your content with other AWS accounts\. 

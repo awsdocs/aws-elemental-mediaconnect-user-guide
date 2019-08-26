@@ -69,7 +69,7 @@ Before you can grant an entitlement, you must do the following:
 
    1. For **Device ID**, enter the value of one of the devices that you configured with your conditional access \(CA\) platform key provider\. 
 
-   1. For **URL**, enter the URL of the API Gateway proxy that you set up to talk to your key server\. The API Gateway proxy must reside in the same AWS Region as AWS Elemental MediaConnect\.
+   1. For **URL**, enter the URL of the API Gateway proxy that you set up to talk to your key server\. The API Gateway proxy must reside in the same AWS Region as MediaConnect\.
 
       The following example shows a URL: 
 

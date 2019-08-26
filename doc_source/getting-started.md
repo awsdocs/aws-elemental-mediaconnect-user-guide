@@ -16,7 +16,7 @@ This Getting Started tutorial shows you how to use AWS Elemental MediaConnect to
 
 ## Prerequisites<a name="getting-started-prerequisites"></a>
 
-Before you can use AWS Elemental MediaConnect, you need an AWS account and the appropriate permissions to access, view, and edit AWS Elemental MediaConnect components\. Complete the steps in [Setting Up AWS Elemental MediaConnect](setting-up.md), and then return to this tutorial\.
+Before you can use AWS Elemental MediaConnect, you need an AWS account and the appropriate permissions to access, view, and edit MediaConnect components\. Complete the steps in [Setting Up AWS Elemental MediaConnect](setting-up.md), and then return to this tutorial\.
 
 ## Step 1: Access AWS Elemental MediaConnect<a name="getting-started-access-console"></a>
 

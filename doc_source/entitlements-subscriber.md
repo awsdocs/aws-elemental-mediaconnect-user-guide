@@ -30,7 +30,7 @@ Before you can create your flow, you must do the following:
 **Tip**  
 You can click in this field and start typing the entitlement name\. AWS Elemental MediaConnect will filter the list to include only entitlements with a name that matches what you type\.
 
-1. If the originator set up encryption on the entitlement, choose **Enable** in the **Decryption** section and do the following:
+1. If the originator set up static key encryption on the entitlement, choose **Enable** in the **Decryption** section and do the following:
 
    1. For **Decryption type**, choose **Static key**\.
 
@@ -39,6 +39,8 @@ You can click in this field and start typing the entitlement name\. AWS Elementa
    1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
 
    1. For **Decryption algorithm**, choose the type of encryption that the originator provided\.
+**Note**  
+If the originator set up SPEKE encryption on the entitlement, skip this step\. All encryption settings are automatically set with the entitlement\.
 
 1. At the bottom of the page, choose **Create flow**\.
 **Note**  

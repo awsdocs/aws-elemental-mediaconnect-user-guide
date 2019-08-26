@@ -10,7 +10,7 @@ Before you can create an entitlement that uses SPEKE encryption, you must perfor
 
 ## Step 1: Get On Board with a CA Provider<a name="encryption-speke-set-up-on-board-key-provider"></a>
 
-To use SPEKE with AWS Elemental MediaConnect, you must have a CA platform key provider\. The following AWS partners provide conditional access \(CA\) solutions for the AWS Elemental MediaConnect customization of SPEKE:
+To use SPEKE with AWS Elemental MediaConnect, you must have a CA platform key provider\. The following AWS partners provide conditional access \(CA\) solutions for the MediaConnect customization of SPEKE:
 + [Verimatrix](https://aws.amazon.com/partners/find/partnerdetails/?n=Verimatrix&id=001E000000be2SEIAY)
 
 If you are a content originator, contact your CA platform key provider for assistance with the onboarding process\. With the help of your CA platform key provider, you manage who gets access to which content\. 
@@ -22,7 +22,7 @@ During the onboarding process, make a note of the following:
 + **Resource ID** – A unique identifier that you create for each piece of content that you configure with the key provider\.
 + **URL** – The URL assigned by AWS for the API that you create in Amazon API Gateway\.
 
-You need these values later, when you configure the [entitlement](entitlements-grant.md) in AWS Elemental MediaConnect\. 
+You need these values later, when you configure the [entitlement](entitlements-grant.md) in MediaConnect\. 
 
 ## Step 2: Create an IAM Policy to Allow API Gateway to Act as Your Proxy<a name="encryption-speke-set-up-create-iam-policy"></a>
 
@@ -77,7 +77,7 @@ In [step 2](#encryption-speke-set-up-create-iam-policy), you created an **APIGat
 
 1. For **Choose the service that will use this role**, choose **EC2**\. 
 
-   You choose EC2 because AWS Elemental MediaConnect is not currently included in this list\. Choosing EC2 lets you create a role\. In a later step, you change this role to include AWS Elemental MediaConnect instead of EC2\.
+   You choose EC2 because AWS Elemental MediaConnect is not currently included in this list\. Choosing EC2 lets you create a role\. In a later step, you change this role to include MediaConnect instead of EC2\.
 
 1. Choose **Next: Permissions**\.
 

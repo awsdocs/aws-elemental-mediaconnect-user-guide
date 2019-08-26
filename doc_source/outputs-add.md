@@ -17,7 +17,7 @@ If you intend to set up an entitlement for an output, don't create the output\. 
 
 1. Choose **Add output**\.
 
-1. For **Name**, specify a name for your output\. This value is an identifier that is visible only on the MediaConnect console and is not visible to the end user\.
+1. For **Name**, specify a name for your output\. This value is an identifier that is visible only on the AWS Elemental MediaConnect console and is not visible to the end user\.
 
 1. Determine which protocol you want to use for the output\.
 
@@ -30,9 +30,9 @@ If you intend to set up an entitlement for an output, don't create the output\. 
 
    1. For **IP address**, choose the IP address where you want to send the output\.
 
-   1. For **Port**, choose the port that you want to use when the content is distributed to this output\.
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
 
-   1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiver can't process the stream properly, specify a value between 100 and 1,000 ms\. This way, MediaConnect attempts to correct jitter from the flow source\. If you keep this field blank, the service uses the default value of 0 ms\.
+   1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiver can't process the stream properly, specify a value between 100 and 1,000 ms\. This way, AWS Elemental MediaConnect attempts to correct jitter from the flow source\. If you keep this field blank, the service uses the default value of 0 ms\.
 
 ------
 #### [ Zixi pull ]
@@ -70,7 +70,7 @@ To specify an additional CIDR block, choose **Add**\. You can specify up to thre
 
    1. For **IP address**, choose the IP address where you want to send the output\.
 
-   1. For **Port**, choose the port that you want to use when the content is distributed to this output\.
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
 
    1. For **Stream ID**, enter the stream ID that is set in the Zixi receiver\.
 **Important**  
