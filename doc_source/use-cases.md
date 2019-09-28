@@ -1,13 +1,13 @@
 # AWS Elemental MediaConnect Use Cases<a name="use-cases"></a>
 
-This section provides simplified business use cases to help you understand different ways that you can implement AWS Elemental MediaConnect to deliver content to the AWS Cloud and beyond\. The use cases in this section are described in general terms, without the mechanics of how you would use the MediaConnect API to achieve the results that you want\.
+This section provides simplified use cases for how you can use AWS Elemental MediaConnect to deliver content to the AWS Cloud and beyond\. The use case descriptions do not include details from the MediaConnect API\.
 
-There are three basic use cases for AWS Elemental MediaConnect implementation:
-+ For **contribution**, use AWS Elemental MediaConnect to ingest content from an on\-premises encoder into the AWS Cloud\.
-+ For **distribution**, use AWS Elemental MediaConnect to deliver content to different geographical areas\.
-+ For **entitlements**, use AWS Elemental MediaConnect to share your content with other AWS accounts\.
+This document includes the following use cases:
++ For **uploads**, use AWS Elemental MediaConnect to upload content from an on\-premises encoder into the AWS Cloud\.
++ For **distribution**, use AWS Elemental MediaConnect to deliver content to different geographical regions\.
++ For **selective sharing**, implemented as entitlements, use AWS Elemental MediaConnect to share your content with other AWS accounts\.
 
 **Topics**
-+ [Use Case: Contribution](use-cases-contribution.md)
++ [Use Case: Uploads](use-cases-uploads.md)
 + [Use Case: Distribution](use-cases-distribution.md)
-+ [Use Case: Entitlements](use-cases-entitlements.md)
++ [Use Case: Selective Sharing](use-cases-entitlements.md)

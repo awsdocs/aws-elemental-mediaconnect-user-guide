@@ -1,9 +1,11 @@
-# Use Case: Entitlements<a name="use-cases-entitlements"></a>
+# Use Case: Selective Sharing<a name="use-cases-entitlements"></a>
 
-Entitlements allow one AWS account holder to share content with other AWS account holders\. For example, a sports company wants to share a flow \(Baseball\-Game\) with a local TV station\. A sports broadcaster \(the originator\) creates an entitlement on the Baseball\-Game flow to allow access for the local TV station \(the subscriber\)\. The local TV station creates an AWS Elemental MediaConnect flow using an output from the Baseball\-Game flow as the source\.
+Selective sharing, implemented as entitlements, allow an AWS account holder to share content with selected AWS account holders\. 
 
-The subscriber must set up their flow in AWS Elemental MediaConnect in the same Region as the originator's flow\. 
+Take the example of a network that wants to share content \(Baseball\-Game\) with a local TV station\. A broadcaster \(the originator\) creates an entitlement on the Baseball\-Game, which allows access from the local TV station \(the subscriber\)\. 
 
-This following illustration shows how to share content with another AWS subscriber\. The output of the originator's flow can be used as the source of the subscriber's flow\.
+With the entitlement in hand, the local TV station creates an AWS Elemental MediaConnect flow, using content from the Baseball\-Game\. That MediaConnect instance must be in the same AWS region used by the broadcaster\.
 
-![\[This illustration shows how to share content with another AWS subscriber. The output of the originator's flow can be used as the source of the subscriber's flow.\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/)
+The following screen illustrates how you might share content with an AWS subscriber\. 
+
+![\[Illustration of how content may be shared with another AWS subscriber.\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/)
