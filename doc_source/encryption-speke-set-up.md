@@ -1,6 +1,6 @@
 # Setting Up SPEKE Encryption Using AWS Elemental MediaConnect<a name="encryption-speke-set-up"></a>
 
-Before you can create an entitlement that uses SPEKE encryption, you must perform the following steps:
+Before you can grant an entitlement that uses SPEKE encryption, you must perform the following steps:
 
 **[Step 1\.](#encryption-speke-set-up-on-board-key-provider)** – Get on board with a conditional access \(CA\) platform key provider who will manage your encryption key\. During this process, you create an API in Amazon API Gateway that sends requests on behalf of AWS Elemental MediaConnect to the key provider\. 
 

@@ -18,7 +18,7 @@ When you stop an active flow, it immediately becomes unavailable to customers wh
 + In the AWS CLI, use the `stop-flow` command:
 
   ```
-  aws mediaconnect stop-flow --flow-arn "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame" --region us-east-1 --profile PMprofile
+  aws mediaconnect stop-flow --flow-arn arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame --profile PMprofile
   ```
 
   The following example shows the return value:

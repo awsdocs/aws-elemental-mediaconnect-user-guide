@@ -28,7 +28,7 @@ If the flow is active, you must stop the flow before you can delete it\.
 + In the AWS CLI, use the `delete-flow` command:
 
   ```
-  aws mediaconnect delete-flow --flow-arn "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame" --region us-east-1 --profile PMprofile
+  aws mediaconnect delete-flow --flow-arn arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BasketballGame --profile PMprofile
   ```
 
   The following example shows the return value:

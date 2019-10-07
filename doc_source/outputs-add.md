@@ -24,6 +24,19 @@ If you intend to set up an entitlement for an output, don't create the output\. 
 1. For specific instructions based on the protocol that you want to use, choose one of the following tabs:
 
 ------
+#### [ RIST ]
+
+   1. For **Protocol**, choose **RIST**\. 
+
+   1. For **IP address**, choose the IP address where you want to send the output\.
+
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
+**Note**  
+The RIST protocol requires one additional port for error correction\. To accommodate this requirement, AWS Elemental MediaConnect reserves the port that is \+1 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000 and 4001\.
+
+   1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiver can't process the stream properly, specify a value between 100 and 1,000 ms\. This way, AWS Elemental MediaConnect attempts to correct jitter from the flow source\. If you keep this field blank, the service uses the default value of 0 ms\.
+
+------
 #### [ RTP or RTP\-FEC ]
 
    1. For **Protocol**, choose **RTP** or **RTP\-FEC**\. 
@@ -31,6 +44,8 @@ If you intend to set up an entitlement for an output, don't create the output\. 
    1. For **IP address**, choose the IP address where you want to send the output\.
 
    1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
+**Note**  
+The RTP\-FEC protocol requires two additional ports for error correction\. To accommodate this requirement, AWS Elemental MediaConnect reserves the ports that are \+2 and \+4 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000, 4002, and 4004\. 
 
    1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiver can't process the stream properly, specify a value between 100 and 1,000 ms\. This way, AWS Elemental MediaConnect attempts to correct jitter from the flow source\. If you keep this field blank, the service uses the default value of 0 ms\.
 

@@ -18,11 +18,31 @@ AWS Elemental MediaConnect allows you to create multiple flows with the same nam
 1. For **Availability Zone**, choose an Availability Zone for your flow\. Use this option when you are setting up redundant flows\. Otherwise, you can leave this as **Any** and the service will randomly assign an Availability Zone within the current AWS Region\.
 
 1. Determine which type of source you are using:
+   + A standard source with the RIST protocol
    + A standard source with the RTP or RTP\-FEC protocol
    + A standard source with the Zixi push protocol
    + An entitled source \(a flow that is owned by another AWS account and has granted an entitlement to your account\)
 
 1. For specific instructions based on your source type and protocol, choose one of the following tabs:
+
+------
+#### [ Standard source with RIST ]
+
+   1. In the **Source** section, for **Source type**, choose **Standard source**\.
+
+   1. For **Name**, specify a name for your source\. This value is an identifier that is visible only on the AWS Elemental MediaConnect console\. 
+
+   1. For **Protocol**, choose **RIST**\. 
+
+   1. For **Ingest port**, specify the port that the flow will listen on for incoming content\. 
+**Note**  
+The RIST protocol requires one additional port for error correction\. To accommodate this requirement, AWS Elemental MediaConnect reserves the port that is \+1 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000 and 4001\.
+
+   1. For **Whitelist CIDR**, specify a range of IP addresses that are allowed to contribute content to your source\. Format the IP addresses as a Classless Inter\-Domain Routing \(CIDR\) block, for example, 10\.24\.34\.0/23\. For more information about CIDR notation, see [RFC 4632](https://tools.ietf.org/html/rfc4632)\.
+
+   1. For **Maximum bitrate**, specify the maximum expected bitrate \(in bits per second\) for the flow\. We recommend that you specify a value that is twice the actual bitrate\.
+
+   1. For **Maximum latency**, specify the size of the buffer \(delay\) that you want the service to maintain\. A higher latency value means a longer delay in transmitting the stream, but more room for error correction\. A lower latency value means a shorter delay, but less room for error correction\. You can choose a value from 1\-15,000 ms\. If you keep this field blank, the service uses the default value of 2,000 ms\. 
 
 ------
 #### [ Standard source with RTP or RTP\-FEC ]
@@ -31,9 +51,11 @@ AWS Elemental MediaConnect allows you to create multiple flows with the same nam
 
    1. For **Name**, specify a name for your source\. This value is an identifier that is visible only on the AWS Elemental MediaConnect console\. It is not visible to anyone outside of the current AWS account\.
 
-   1. For **Protocol**, choose RTP or RTP\-FEC\. 
+   1. For **Protocol**, choose **RTP** or **RTP\-FEC**\. 
 
    1. For **Ingest port**, specify the port that the flow will listen on for incoming content\.
+**Note**  
+The RTP\-FEC protocol requires two additional ports for error correction\. To accommodate this requirement, AWS Elemental MediaConnect reserves the ports that are \+2 and \+4 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000, 4002, and 4004\. 
 
    1. For **Whitelist CIDR**, specify a range of IP addresses that are allowed to contribute content to your source\. Format the IP addresses as a Classless Inter\-Domain Routing \(CIDR\) block, for example, 10\.24\.34\.0/23\. For more information about CIDR notation, see [RFC 4632](https://tools.ietf.org/html/rfc4632)\.
 
@@ -114,7 +136,7 @@ The flow doesn't start automatically\. You must [start the flow](flows-start.md)
 1. In the AWS CLI, use the `create-flow` command:
 
    ```
-   aws mediaconnect create-flow --cli-input-json file://rtp.json --region us-east-1 --profile PMprofile
+   aws mediaconnect create-flow --cli-input-json file://rtp.json --profile PMprofile
    ```
 
    The following example shows the return value:

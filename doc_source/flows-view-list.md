@@ -11,7 +11,7 @@ You can view a list of your AWS Elemental MediaConnect flows in a specific AWS R
 + In the AWS CLI, use the `list-flows` command:
 
   ```
-  aws mediaconnect list-flows --region us-east-1 --profile PMprofile
+  aws mediaconnect list-flows --profile PMprofile
   ```
 
   The following example shows the return value:

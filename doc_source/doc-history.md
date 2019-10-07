@@ -4,6 +4,8 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Sharing the entitlement data transfer fee with the subscriber](entitlements-grant.md) | When you grant an entitlement, you can now specify the percentage of the entitlement data transfer fee that you want the subscriber to be responsible for\. | September 16, 2019 | 
+| [RIST sources and outputs](protocols.md) | You can now use the RIST protocol for sources and outputs\. | September 11, 2019 | 
 | [Zixi pull outputs](outputs-add.md) | You can now add outputs that use the Zixi pull protocol\. | July 26, 2019 | 
 | [SPEKE support ](encryption-speke-set-up.md) | You can now encrypt the contents of your entitlements using \(SPEKE\)\. | June 25, 2019 | 
 | [Service limits \(flows\)](limits.md) | You can now request an increase to the limit of 20 flows per AWS Region\. | March 14, 2019 | 

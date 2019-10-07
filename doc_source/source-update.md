@@ -18,7 +18,7 @@ You can update the source of an existing flow, even when the flow is currently r
 + In the AWS CLI, use the update\-flow\-source command:
 
   ```
-  aws mediaconnect update-flow-source --flow-arn "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow" --source-arn "arn:aws:mediaconnect:us-east-1:111122223333:source:2-3aBC45dEF67hiJ89-c34de5fG678h:AwardsShowSource" --whitelist-cidr "10.24.34.0/24" --region us-east-1 --profile PMprofile
+  aws mediaconnect update-flow-source --flow-arn arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:AwardsShow --source-arn arn:aws:mediaconnect:us-east-1:111122223333:source:2-3aBC45dEF67hiJ89-c34de5fG678h:AwardsShowSource --whitelist-cidr 10.24.34.0/24 --profile PMprofile
   ```
 
   The following example shows the return value:
