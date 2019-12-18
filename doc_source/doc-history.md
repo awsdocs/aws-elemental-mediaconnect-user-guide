@@ -8,7 +8,7 @@ The following table describes the documentation for this release of AWS Elementa
 | [RIST sources and outputs](protocols.md) | You can now use the RIST protocol for sources and outputs\. | September 11, 2019 | 
 | [Zixi pull outputs](outputs-add.md) | You can now add outputs that use the Zixi pull protocol\. | July 26, 2019 | 
 | [SPEKE support ](encryption-speke-set-up.md) | You can now encrypt the contents of your entitlements using \(SPEKE\)\. | June 25, 2019 | 
-| [Service limits \(flows\)](limits.md) | You can now request an increase to the limit of 20 flows per AWS Region\. | March 14, 2019 | 
+| [Service quotas \(flows\)](quotas.md) | You can now request an increase to the quota of 20 flows per AWS Region\. | March 14, 2019 | 
 | [New service and guide](what-is.md) | This is the initial release of the media ingest and transport service, AWS Elemental MediaConnect, and the *AWS Elemental MediaConnect User Guide*\. | November 27, 2018 | 
 
 **Note**  

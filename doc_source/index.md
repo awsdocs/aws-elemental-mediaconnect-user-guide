@@ -91,7 +91,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Tagging AWS Elemental MediaConnect Resources](tagging.md)
 + [AWS CLI Commands for AWS Elemental MediaConnect](cli-commands.md)
 + [Best Practices for AWS Elemental MediaConnect](best-practices.md)
-+ [Limits in AWS Elemental MediaConnect](limits.md)
++ [Quotas in AWS Elemental MediaConnect](quotas.md)
 + [AWS Elemental MediaConnect Related Information](resources.md)
 + [Document History for User Guide](doc-history.md)
 + [AWS Glossary](glossary.md)
