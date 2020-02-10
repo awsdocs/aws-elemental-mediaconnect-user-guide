@@ -8,7 +8,7 @@ You can view a flow's details, such as ARN, Availability Zone, status, source, e
 
 1. On the **Flows** page, choose the name of the flow that you want to view\.
 
-   The details page for that flow appears\. This page is divided into three tabs:
+   The details page for that flow appears\. This page is divided into the following tabs:
    + The **Source** tab shows details about the source for this flow, including an indication of whether the flow is connected to the source\. 
    + The **Outputs** tab shows details for each output that you created for this flow\.
    + The **Entitlements** tab shows any entitlements that you have granted on this flow\.

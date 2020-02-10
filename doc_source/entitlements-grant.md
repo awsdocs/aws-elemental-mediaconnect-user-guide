@@ -98,3 +98,75 @@ Even if you specify that the subscriber is responsible for a portion or all of t
    + The AWS Region that you created the flow in
    + The encryption key and algorithm if you set up encryption on the entitlement
    + The percentage of the entitlement data transfer fee that the subscriber is responsible for
+
+**To grant an entitlement on a flow \(AWS CLI\)**
+
+1. Create a JSON file that contains the details of the entitlements that you want to grant\.
+
+   The following example shows the structure for the contents of the file:
+
+   ```
+   [
+     {
+       "Description": "For AnyCompany",
+       "Encryption": [
+         {
+           "Algorithm": "aes128",
+           "KeyType": "static-key",
+           "RoleArn": "arn:aws:iam::111122223333:role/MediaConnect-ASM",
+           "SecretArn": "arn:aws:secretsmanager:us-west-2:111122223333:secret:mySecret1"
+         }
+       ],
+       "Name": "AnyCompany_Entitlement",
+       "Subscribers": [
+         "444455556666",
+         "123456789012"
+       ]
+     },
+     {
+       "Description": "For Example Corp",
+       "Name": "ExampleCorp",
+       "Subscribers": [
+         "777788889999"
+       ]
+     }
+   ]
+   ```
+
+1. In the AWS CLI, use the `grant-flow-entitlements` command:
+
+   ```
+   aws mediaconnect grant-flow-entitlements --entitlements --flow-arn arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame  --cli-input-json file://entitlements.json
+   ```
+
+   The following example shows the return value:
+
+   ```
+   {
+       "Entitlements": [
+           {
+               "Name": "AnyCompany_Entitlement",
+               "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement",
+               "Subscribers": [
+                   "444455556666", "123456789012"
+               ],
+               "Description": "For AnyCompany",
+               "Encryption": {
+                   "SecretArn": "arn:aws:secretsmanager:us-west-2:111122223333:secret:mySecret1",
+                   "Algorithm": "aes128",
+                   "RoleArn": "arn:aws:iam::111122223333:role/MediaConnect-ASM",
+                   "KeyType": "static-key"
+               }
+           },
+           {
+               "Name": "ExampleCorp",
+               "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-3333cccc4444dddd-1111aaaa2222:ExampleCorp",
+               "Subscribers": [
+                   "777788889999"
+               ],
+               "Description": "For Example Corp"
+           }
+       ],
+       "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame"
+   }
+   ```

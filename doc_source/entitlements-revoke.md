@@ -15,3 +15,19 @@ After you revoke an entitlement, the content becomes unavailable to the subscrib
 1. Choose the option for the entitlement that you want to revoke\.
 
 1. Choose **Revoke**\.
+
+**To revoke an entitlement on a flow \(AWS CLI\)**
++ In the AWS CLI, use the `revoke-flow-entitlement` command:
+
+  ```
+  aws mediaconnect revoke-flow-entitlement --flow-arn arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame --entitlement-arn arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement
+  ```
+
+  The following example shows the return value:
+
+  ```
+  {
+      "FlowArn": "arn:aws:mediaconnect:us-east-1:111122223333:flow:1-23aBC45dEF67hiJ8-12AbC34DE5fG:BaseballGame",
+      "EntitlementArn": "arn:aws:mediaconnect:us-west-2:111122223333:entitlement:1-11aa22bb11aa22bb-3333cccc4444:AnyCompany_Entitlement"
+  }
+  ```

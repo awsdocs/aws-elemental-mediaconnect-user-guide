@@ -1,7 +1,7 @@
 # AWS Elemental MediaConnect User Guide
 
 -----
-*****Copyright &copy; 2019 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; 2020 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -63,6 +63,7 @@ Amazon's trademarks and trade dress may not be used in
 + [Distributing Content Using AWS Elemental MediaConnect](distribute-content.md)
    + [Distributing Content Across Regions](distribution-across-regions.md)
    + [Distributing Content to AWS Elemental MediaLive](distribution-to-medialive.md)
+   + [Distributing Content from an AWS Elemental MediaLive Multiplex](distribution-from-medialive.md)
 + [Protocols in AWS Elemental MediaConnect](protocols.md)
 + [Security in AWS Elemental MediaConnect](security.md)
    + [Data Protection for AWS Elemental MediaConnect](data-protection.md)
@@ -88,6 +89,7 @@ Amazon's trademarks and trade dress may not be used in
       + [AWS Elemental MediaConnect Metrics to Monitor Source Health](monitor-with-cloudwatch-metrics-source-health.md)
       + [AWS Elemental MediaConnect Metrics to Monitor Output Health](monitor-with-cloudwatch-metrics-output-health.md)
       + [Using Metrics to Troubleshoot](monitor-with-cloudwatch-metrics-troubleshooting.md)
+   + [Monitoring the Health of a Flow](monitoring-flow-health.md)
    + [Tagging AWS Elemental MediaConnect Resources](tagging.md)
 + [AWS CLI Commands for AWS Elemental MediaConnect](cli-commands.md)
 + [Best Practices for AWS Elemental MediaConnect](best-practices.md)

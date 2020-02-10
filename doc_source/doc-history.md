@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Service quotas \(outputs\)](quotas.md) | You can now add up to 50 outputs to each flow\. | February 7, 2020 | 
 | [Sharing the entitlement data transfer fee with the subscriber](entitlements-grant.md) | When you grant an entitlement, you can now specify the percentage of the entitlement data transfer fee that you want the subscriber to be responsible for\. | September 16, 2019 | 
 | [RIST sources and outputs](protocols.md) | You can now use the RIST protocol for sources and outputs\. | September 11, 2019 | 
 | [Zixi pull outputs](outputs-add.md) | You can now add outputs that use the Zixi pull protocol\. | July 26, 2019 | 

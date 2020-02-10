@@ -1,6 +1,6 @@
 # Adding Outputs to a Flow<a name="outputs-add"></a>
 
-You can add up to 20 outputs for each flow\. Every output must have a name, a protocol, an IP address, and a port\.
+You can add up to 50 outputs for each flow\. Every output must have a name, a protocol, an IP address, and a port\.
 
 **Note**  
 If you intend to set up an entitlement for an output, don't create the output\. Instead, [grant an entitlement](entitlements-grant.md)\. When the subscriber creates a flow using your content as the source, the service creates an output on your flow\.

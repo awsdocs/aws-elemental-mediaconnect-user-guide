@@ -28,7 +28,7 @@ Originator account
 An AWS account that was used to create a flow with at least one entitlement\.
 
 Output  
-The destination address, protocol, and port that AWS Elemental MediaConnect sends the ingested video to\. Each flow can have up to 20 outputs\. An output can have the same protocol or a different protocol from the source\.
+The destination address, protocol, and port that AWS Elemental MediaConnect sends the ingested video to\. Each flow can have up to 50 outputs\. An output can have the same protocol or a different protocol from the source\.
 
 Policy  
 An [IAM policy](https://docs.aws.amazon.com/IAM/latest/UserGuide/access_policies.html), which is used to manage access in AWS\. 

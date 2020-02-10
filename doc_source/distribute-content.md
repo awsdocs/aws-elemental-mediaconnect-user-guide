@@ -9,3 +9,4 @@ The following illustration shows an on\-premises contribution encoder located in
 **Topics**
 + [Distributing Content Across Regions](distribution-across-regions.md)
 + [Distributing Content to AWS Elemental MediaLive](distribution-to-medialive.md)
++ [Distributing Content from an AWS Elemental MediaLive Multiplex](distribution-from-medialive.md)
