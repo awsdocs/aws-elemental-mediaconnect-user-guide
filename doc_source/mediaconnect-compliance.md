@@ -1,4 +1,4 @@
-# Compliance Validation for AWS Elemental MediaConnect<a name="mediaconnect-compliance"></a>
+# Compliance validation for AWS Elemental MediaConnect<a name="mediaconnect-compliance"></a>
 
 Third\-party auditors assess the security and compliance of AWS Elemental MediaConnect as part of multiple AWS compliance programs\. These include SOC, PCI, HIPAA, and others\.
 

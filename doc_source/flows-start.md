@@ -1,4 +1,4 @@
-# Starting a Flow<a name="flows-start"></a>
+# Starting a flow<a name="flows-start"></a>
 
 After you create a flow, you must start the flow\. You can also stop and restart a flow at any time\.
 

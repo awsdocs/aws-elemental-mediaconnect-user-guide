@@ -1,4 +1,4 @@
-# Step 3a: Create a Policy<a name="setting-up-create-nonadmin-IAM-users-policies"></a>
+# Step 3a: Create a policy<a name="setting-up-create-nonadmin-IAM-users-policies"></a>
 
 Create two policies for AWS Elemental MediaConnect: one to provide read/write access and one to provide read\-only access\. Perform these steps one time only for each policy\.
 

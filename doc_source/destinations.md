@@ -1,4 +1,4 @@
-# Output Destinations<a name="destinations"></a>
+# Output destinations<a name="destinations"></a>
 
 Each output on a flow must be sent to a different destination\. The parameters that define the destination depend on the protocol, but every protocol uses a compound identifier for the destination\. For example, multiple outputs can point to the same destination IP address, as long as none of their ports overlap\. Likewise, multiple outputs can point to the same stream ID as long as their remote IDs are different\. The following table lists how each protocol defines the destination\.
 

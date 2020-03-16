@@ -1,4 +1,4 @@
-# Confirming the Connection of a Flow to Its Source<a name="source-confirm-connection"></a>
+# Confirming the connection of a flow to its source<a name="source-confirm-connection"></a>
 
 On the AWS Elemental MediaConnect console, you can view the status of the connection between a flow and its source\.
 

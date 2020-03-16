@@ -1,14 +1,14 @@
-# How AWS Elemental MediaConnect Works with IAM<a name="security_iam_service-with-iam"></a>
+# How AWS Elemental MediaConnect works with IAM<a name="security_iam_service-with-iam"></a>
 
 Before you use IAM to manage access to MediaConnect, you should understand what IAM features are available to use with MediaConnect\. To get a high\-level view of how MediaConnect and other AWS services work with IAM, see [AWS Services That Work with IAM](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_aws-services-that-work-with-iam.html) in the *IAM User Guide*\.
 
 **Topics**
-+ [MediaConnect Identity\-Based Policies](#security_iam_service-with-iam-id-based-policies)
-+ [MediaConnect Resource\-Based Policies](#security_iam_service-with-iam-resource-based-policies)
-+ [Authorization Based on MediaConnect Tags](#security_iam_service-with-iam-tags)
-+ [MediaConnect IAM Roles](#security_iam_service-with-iam-roles)
++ [MediaConnect identity\-based policies](#security_iam_service-with-iam-id-based-policies)
++ [MediaConnect resource\-based policies](#security_iam_service-with-iam-resource-based-policies)
++ [Authorization based on MediaConnect tags](#security_iam_service-with-iam-tags)
++ [MediaConnect IAM roles](#security_iam_service-with-iam-roles)
 
-## MediaConnect Identity\-Based Policies<a name="security_iam_service-with-iam-id-based-policies"></a>
+## MediaConnect identity\-based policies<a name="security_iam_service-with-iam-id-based-policies"></a>
 
 With IAM identity\-based policies, you can specify allowed or denied actions and resources as well as the conditions under which actions are allowed or denied\. MediaConnect supports specific actions, resources, and condition keys\. To learn about all of the elements that you use in a JSON policy, see [IAM JSON Policy Elements Reference](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_elements.html) in the *IAM User Guide*\.
 
@@ -77,7 +77,7 @@ Many MediaConnect API actions involve multiple resources\. For example, `RemoveF
 
 To see a list of MediaConnect resource types and their ARNs, see [Resources Defined by AWS Elemental MediaConnect](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awskeymanagementservice.html#list_awselementalmediaconnect.html#awselementalmediaconnect-resources-for-iam-policies) in the *IAM User Guide*\. To learn with which actions you can specify the ARN of each resource, see [Actions Defined by AWS Elemental MediaConnect](https://docs.aws.amazon.com/IAM/latest/UserGuide/list_awselementalmediaconnect.html#awselementalmediaconnect-actions-as-permissions)\.
 
-### Condition Keys<a name="security_iam_service-with-iam-id-based-policies-conditionkeys"></a>
+### Condition keys<a name="security_iam_service-with-iam-id-based-policies-conditionkeys"></a>
 
 MediaConnect doesn't provide any service\-specific condition keys, but it does support using some global condition keys\. To see all AWS global condition keys, see [AWS Global Condition Context Keys](https://docs.aws.amazon.com/IAM/latest/UserGuide/reference_policies_condition-keys.html) in the *IAM User Guide*\. 
 
@@ -85,33 +85,33 @@ MediaConnect doesn't provide any service\-specific condition keys, but it does s
 
 
 
-To view examples of MediaConnect identity\-based policies, see [AWS Elemental MediaConnect Identity\-Based Policy Examples](security_iam_id-based-policy-examples.md)\.
+To view examples of MediaConnect identity\-based policies, see [AWS Elemental MediaConnect identity\-based policy examples](security_iam_id-based-policy-examples.md)\.
 
-## MediaConnect Resource\-Based Policies<a name="security_iam_service-with-iam-resource-based-policies"></a>
+## MediaConnect resource\-based policies<a name="security_iam_service-with-iam-resource-based-policies"></a>
 
 AWS Elemental MediaConnect does not support resource\-based policies\.
 
-## Authorization Based on MediaConnect Tags<a name="security_iam_service-with-iam-tags"></a>
+## Authorization based on MediaConnect tags<a name="security_iam_service-with-iam-tags"></a>
 
 AWS Elemental MediaConnect does not support tagging resources or controlling access based on tags\.
 
-## MediaConnect IAM Roles<a name="security_iam_service-with-iam-roles"></a>
+## MediaConnect IAM roles<a name="security_iam_service-with-iam-roles"></a>
 
 An [IAM role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles.html) is an entity within your AWS account that has specific permissions\.
 
-### Using Temporary Credentials with MediaConnect<a name="security_iam_service-with-iam-roles-tempcreds"></a>
+### Using temporary credentials with MediaConnect<a name="security_iam_service-with-iam-roles-tempcreds"></a>
 
 You can use temporary credentials to sign in with federation, assume an IAM role, or to assume a cross\-account role\. You obtain temporary security credentials by calling AWS STS API operations such as [AssumeRole](https://docs.aws.amazon.com/STS/latest/APIReference/API_AssumeRole.html) or [GetFederationToken](https://docs.aws.amazon.com/STS/latest/APIReference/API_GetFederationToken.html)\. 
 
 MediaConnect supports using temporary credentials\. 
 
-### Service\-Linked Roles<a name="security_iam_service-with-iam-roles-service-linked"></a>
+### Service\-linked roles<a name="security_iam_service-with-iam-roles-service-linked"></a>
 
 [Service\-linked roles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-linked-role) allow AWS services to access resources in other services to complete an action on your behalf\. Service\-linked roles appear in your IAM account and are owned by the service\. An IAM administrator can view but not edit the permissions for service\-linked roles\.
 
 MediaConnect does not support service\-linked roles\. 
 
-### Service Roles<a name="security_iam_service-with-iam-roles-service"></a>
+### Service roles<a name="security_iam_service-with-iam-roles-service"></a>
 
 This feature allows a service to assume a [service role](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_terms-and-concepts.html#iam-term-service-role) on your behalf\. This role allows the service to access resources in other services to complete an action on your behalf\. Service roles appear in your IAM account and are owned by the account\. This means that an IAM administrator can change the permissions for this role\. However, doing so might break the functionality of the service\.
 

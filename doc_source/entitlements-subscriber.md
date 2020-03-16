@@ -1,4 +1,4 @@
-# Subscribing to Content Provided by Another AWS Account<a name="entitlements-subscriber"></a>
+# Subscribing to content provided by another AWS account<a name="entitlements-subscriber"></a>
 
 When another AWS account \(originator account\) grants an entitlement to your AWS account \(subscriber account\), you can create a flow that uses the originator's content as your source\. To subscribe to content provided by another AWS account, you create a flow based on the entitlement granted to you\. You must set up your flow in the same AWS Region as the originator's flow\.
 

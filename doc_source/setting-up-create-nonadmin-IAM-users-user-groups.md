@@ -1,4 +1,4 @@
-# Step 3b: Create a User Group<a name="setting-up-create-nonadmin-IAM-users-user-groups"></a>
+# Step 3b: Create a user group<a name="setting-up-create-nonadmin-IAM-users-user-groups"></a>
 
 You can create a user group for each policy and assign users to a group rather than attaching individual policies to each user\. Using the following procedure, create two user groups: one for the **MediaConnectAllAccess** policy and one for the **MediaConnectReadOnlyAccess** policy\.
 

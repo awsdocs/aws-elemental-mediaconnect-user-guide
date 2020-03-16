@@ -1,9 +1,10 @@
-# Document History for User Guide<a name="doc-history"></a>
+# Document history for user guide<a name="doc-history"></a>
 
 The following table describes the documentation for this release of AWS Elemental MediaConnect\. For notification about updates to this documentation, you can subscribe to an RSS feed\.
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Source failover](source-failover.md) | You can now enable source failover and add a second \(redundant\) source to your flow\. | March 13, 2020 | 
 | [Service quotas \(outputs\)](quotas.md) | You can now add up to 50 outputs to each flow\. | February 7, 2020 | 
 | [Sharing the entitlement data transfer fee with the subscriber](entitlements-grant.md) | When you grant an entitlement, you can now specify the percentage of the entitlement data transfer fee that you want the subscriber to be responsible for\. | September 16, 2019 | 
 | [RIST sources and outputs](protocols.md) | You can now use the RIST protocol for sources and outputs\. | September 11, 2019 | 

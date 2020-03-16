@@ -1,4 +1,4 @@
-# Step 3c: Create Users<a name="setting-up-create-nonadmin-IAM-users-users"></a>
+# Step 3c: Create users<a name="setting-up-create-nonadmin-IAM-users-users"></a>
 
 Create IAM users for the individuals who require access to AWS Elemental MediaConnect, and add each user to the appropriate user group to ensure that they have the right level of permissions\. If you have already created users, skip to step 6 to modify the permissions for the users\.
 

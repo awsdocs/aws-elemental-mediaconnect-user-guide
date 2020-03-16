@@ -1,4 +1,4 @@
-# Updating Outputs on a Flow<a name="outputs-update"></a>
+# Updating outputs on a flow<a name="outputs-update"></a>
 
 You can update outputs on a flow, even when the flow is active\.
 
@@ -12,7 +12,7 @@ You can update outputs on a flow, even when the flow is active\.
 
    A list of outputs for that flow appears\.
 
-1. Choose the option for the output that you want to update\.
+1. Choose the output that you want to update\.
 
 1. Choose **Update**\.
 

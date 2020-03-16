@@ -1,4 +1,4 @@
-# Stopping a Flow<a name="flows-stop"></a>
+# Stopping a flow<a name="flows-stop"></a>
 
 When you stop an active flow, it immediately becomes unavailable to customers who are accessing the output directly from your AWS Elemental MediaConnect flow or through an entitlement\. If you want to delete an active flow, you must stop the flow first before you can delete it\.
 
@@ -12,7 +12,7 @@ When you stop an active flow, it immediately becomes unavailable to customers wh
 
 1. Choose **Stop**\.
 
-   The status of the flow changes to **Standby**\. The flow stops immediately and is no longer viewable to customers who are accessing the output directly from your AWS Elemental MediaConnect flow or through an entitlement\.
+   The status of the flow changes to **Standby**\. The flow stops immediately and is no longer viewable to customers who are accessing the output directly from your MediaConnect flow or through an entitlement\.
 
 **To stop a flow \(AWS CLI\)**
 + In the AWS CLI, use the `stop-flow` command:

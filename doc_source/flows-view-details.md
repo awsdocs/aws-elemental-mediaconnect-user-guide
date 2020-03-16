@@ -1,4 +1,4 @@
-# Viewing the Details of a Flow<a name="flows-view-details"></a>
+# Viewing the details of a flow<a name="flows-view-details"></a>
 
 You can view a flow's details, such as ARN, Availability Zone, status, source, entitlements, and outputs\.
 

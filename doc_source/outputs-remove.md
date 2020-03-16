@@ -1,4 +1,4 @@
-# Removing Outputs from a Flow<a name="outputs-remove"></a>
+# Removing outputs from a flow<a name="outputs-remove"></a>
 
 You can remove outputs that you added to the flow\. If AWS Elemental MediaConnect generated the output as the result of an entitlement, you must [revoke the entitlement](entitlements-revoke.md)\.
 

@@ -1,8 +1,8 @@
-# AWS Elemental MediaConnect Resource\-Based Policy Examples<a name="security_iam_resource-based-policy-examples"></a>
+# AWS Elemental MediaConnect resource\-based policy examples<a name="security_iam_resource-based-policy-examples"></a>
 
 To access the AWS Elemental MediaConnect console, you must have a minimum set of permissions that allows you to list and view details about the MediaConnect resources in your AWS account\. The IAM policies in this section show examples of policies that allow specific actions on resources in AWS Elemental MediaConnect\.
 
-## Allow Read Access to All Resources in AWS Elemental MediaConnect<a name="iam-policy-examples-for-mediaconnect-actions-read-only-all-resources"></a>
+## Allow read access to all resources in AWS Elemental MediaConnect<a name="iam-policy-examples-for-mediaconnect-actions-read-only-all-resources"></a>
 
 To access the AWS Elemental MediaConnect console, you must have a policy that defines which actions you are allowed to take on MediaConnect resources in your AWS account\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:List*` and `mediaconnect:Describe*` actions allow read\-only access to all resources that you create in AWS Elemental MediaConnect\.
@@ -47,7 +47,7 @@ To access the AWS Elemental MediaConnect console, you must have a policy that de
 }
 ```
 
-## Allow All AWS Elemental MediaConnect Actions on a Specific Resource<a name="iam-policy-examples-for-mediaconnect-actions-all-actions-specific-resource"></a>
+## Allow all AWS Elemental MediaConnect actions on a specific resource<a name="iam-policy-examples-for-mediaconnect-actions-all-actions-specific-resource"></a>
 
 Every user of AWS Elemental MediaConnect must have a policy that defines permissions on MediaConnect resources\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:*` action all AWS Elemental MediaConnect actions on a specific resource\.
@@ -93,7 +93,7 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
 }
 ```
 
-## Allow All Actions on All AWS Elemental MediaConnect Resources<a name="iam-policy-examples-for-mediaconnect-actions-all-actions-all-resources"></a>
+## Allow all actions on all AWS Elemental MediaConnect resources<a name="iam-policy-examples-for-mediaconnect-actions-all-actions-all-resources"></a>
 
 Every user of AWS Elemental MediaConnect must have a policy that defines permissions on AWS Elemental MediaConnect resources\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:*` action allows all actions on all resources that you create in AWS Elemental MediaConnect\.

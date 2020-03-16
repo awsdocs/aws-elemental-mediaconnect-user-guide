@@ -1,4 +1,4 @@
-# Adding Outputs to a Flow<a name="outputs-add"></a>
+# Adding outputs to a flow<a name="outputs-add"></a>
 
 You can add up to 50 outputs for each flow\. Every output must have a name, a protocol, an IP address, and a port\.
 
@@ -30,7 +30,7 @@ If you intend to set up an entitlement for an output, don't create the output\. 
 
    1. For **IP address**, choose the IP address where you want to send the output\.
 
-   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
 **Note**  
 The RIST protocol requires one additional port for error correction\. To accommodate this requirement, AWS Elemental MediaConnect reserves the port that is \+1 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000 and 4001\.
 
@@ -43,7 +43,7 @@ The RIST protocol requires one additional port for error correction\. To accommo
 
    1. For **IP address**, choose the IP address where you want to send the output\.
 
-   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
 **Note**  
 The RTP\-FEC protocol requires two additional ports for error correction\. To accommodate this requirement, AWS Elemental MediaConnect reserves the ports that are \+2 and \+4 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000, 4002, and 4004\. 
 
@@ -85,7 +85,7 @@ To specify an additional CIDR block, choose **Add**\. You can specify up to thre
 
    1. For **IP address**, choose the IP address where you want to send the output\.
 
-   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output Destinations](destinations.md)\.
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
 
    1. For **Stream ID**, enter the stream ID that is set in the Zixi receiver\.
 **Important**  

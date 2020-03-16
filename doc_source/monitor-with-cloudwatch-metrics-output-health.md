@@ -1,4 +1,4 @@
-# AWS Elemental MediaConnect Metrics to Monitor Output Health<a name="monitor-with-cloudwatch-metrics-output-health"></a>
+# AWS Elemental MediaConnect metrics to monitor output health<a name="monitor-with-cloudwatch-metrics-output-health"></a>
 
 AWS Elemental MediaConnect sends metrics to CloudWatch\. You can review specific metrics to evaluate the health of the output of your flow\. 
 

@@ -1,4 +1,4 @@
-# Revoking an Entitlement<a name="entitlements-revoke"></a>
+# Revoking an entitlement<a name="entitlements-revoke"></a>
 
 After you revoke an entitlement, the content becomes unavailable to the subscriber account and the associated output is removed from your flow\.
 
@@ -12,7 +12,7 @@ After you revoke an entitlement, the content becomes unavailable to the subscrib
 
 1. Choose the **Entitlements** tab\.
 
-1. Choose the option for the entitlement that you want to revoke\.
+1. Choose the entitlement that you want to revoke\.
 
 1. Choose **Revoke**\.
 

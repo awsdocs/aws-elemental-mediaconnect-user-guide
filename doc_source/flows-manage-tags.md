@@ -1,4 +1,4 @@
-# Managing Tags on a Flow<a name="flows-manage-tags"></a>
+# Managing tags on a flow<a name="flows-manage-tags"></a>
 
 You can use tags to help you track the billing and organization for your AWS Elemental MediaConnect flows, entitlements, and outputs\. These are the same tags that AWS Billing and Cost Management provides for organizing your AWS bill\. For more information about using tags for cost allocation, see [Use Cost Allocation Tags for Custom Billing Reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/allocation.html) in the *AWS Billing and Cost Management User Guide*\. 
 

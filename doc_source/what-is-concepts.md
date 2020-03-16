@@ -1,4 +1,4 @@
-# AWS Elemental MediaConnect Concepts and Terminology<a name="what-is-concepts"></a>
+# AWS Elemental MediaConnect concepts and terminology<a name="what-is-concepts"></a>
 
 ARN  
 An [Amazon Resource Name](https://docs.aws.amazon.com/general/latest/gr/aws-arns-and-namespaces.html), which is a unique identifier for any AWS resource\.
@@ -19,7 +19,7 @@ Entitlement
 A permission that is granted to allow an AWS account to access the content in a specific AWS Elemental MediaConnect flow\. The content originator grants an entitlement to a specific AWS account \(the subscriber\)\. Once an entitlement is granted, the subscriber can create a flow using the originator's flow as the source\. Each flow can have up to 50 entitlements\. 
 
 Flow  
-A connection between one video source and one or more outputs\. For each flow, you specify the transport protocol to use, encryption information, and details for any outputs or entitlements that you want\. AWS Elemental MediaConnect returns an ingest endpoint where you can send your live video as a single unicast stream\. The service replicates and distributes the video to every output that you specify, whether inside or outside the AWS Cloud\. You can also set up entitlements on a flow to allow other AWS accounts to access your content\.
+A connection between one or more video sources and one or more outputs\. For each flow, you specify the transport protocol to use, encryption information, and details for any outputs or entitlements that you want\. AWS Elemental MediaConnect returns an ingest endpoint where you can send your live video as a single unicast stream\. The service replicates and distributes the video to every output that you specify, whether inside or outside the AWS Cloud\. You can also set up entitlements on a flow to allow other AWS accounts to access your content\.
 
 Mezzanine stream  
 A lightly compressed video stream that takes up less space than a full resolution uncompressed stream\. The quality of a mezzanine stream is high enough to use as a source for creating final encodes that are delivered to consumer devices\. 
@@ -53,7 +53,7 @@ Sharing
 Allowing another AWS account to access the content of your flow\. To share your content, you \(the originator\) grant an entitlement to another AWS account \(the subscriber\)\.
 
 Source  
-External video content that includes configuration information \(encryption and source type\) and a network address\. Each flow has one source\. A standard source comes from a source other than another AWS Elemental MediaConnect flow, such as an on\-premises encoder\. An entitled source comes from an AWS Elemental MediaConnect flow that is owned by another AWS account and has granted an entitlement to your account\.
+External video content that includes configuration information \(encryption and source type\) and a network address\. Each flow has at least one source\. A standard source comes from a source other than another AWS Elemental MediaConnect flow, such as an on\-premises encoder\. An entitled source comes from an AWS Elemental MediaConnect flow that is owned by another AWS account and has granted an entitlement to your account\.
 
 Subscriber account  
 An AWS account that been granted access to content from an AWS Elemental MediaConnect flow that is owned by another AWS account \(the originator account\)\. This permission is granted when the originator sets up an entitlement for the subscriber\. The entitlement permits the subscriber to create a flow that uses the originator's content as the source\.

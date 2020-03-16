@@ -1,4 +1,4 @@
-# Setting Up Static Key Encryption Using AWS Elemental MediaConnect<a name="encryption-static-key-set-up"></a>
+# Setting up static key encryption using AWS Elemental MediaConnect<a name="encryption-static-key-set-up"></a>
 
 Before you can create a flow with an encrypted source or an output or entitlement that uses static key encryption, you must perform the following steps:
 
@@ -11,7 +11,7 @@ Before you can create a flow with an encrypted source or an output or entitlemen
 **Note**  
 Static key encryption is supported only for entitlements, and for sources and outputs that use the Zixi protocol\.
 
-## Step 1: Store Your Encryption Key in AWS Secrets Manager<a name="encryption-static-key-set-up-store-key"></a>
+## Step 1: Store your encryption key in AWS Secrets Manager<a name="encryption-static-key-set-up-store-key"></a>
 
 To use static key encryption to encrypt your AWS Elemental MediaConnect content, you must create a secret in AWS Secrets Manager to store your encryption key\. You also must use the same AWS account to create the secret that you use to create the AWS Elemental MediaConnect resource \(source, output, or entitlement\) that uses the secret\. AWS Elemental MediaConnect does not support cross\-account sharing of secrets\.
 
@@ -46,11 +46,11 @@ To use static key encryption to encrypt your AWS Elemental MediaConnect content,
 
 1. Make a note of the secret ARN from Secrets Manager\. You will need this information in the next procedure\.
 
-## Step 2: Create an IAM Policy to Allow AWS Elemental MediaConnect to Access Your Secret<a name="encryption-static-key-set-up-create-iam-policy"></a>
+## Step 2: Create an IAM policy to allow AWS Elemental MediaConnect to access your secret<a name="encryption-static-key-set-up-create-iam-policy"></a>
 
 In [step 1](#encryption-static-key-set-up-store-key), you created a secret and stored it in AWS Secrets Manager\. In this step, you create an IAM policy that allows AWS Elemental MediaConnect to read the secret that you stored\.
 
-**To create an IAM policy that allows AWS Elemental MediaConnect to access your secret**
+**To create an IAM policy that allows MediaConnect to access your secret**
 
 1. Open the IAM console at [https://console\.aws\.amazon\.com/iam/](https://console.aws.amazon.com/iam/)\.
 
@@ -80,7 +80,7 @@ In [step 1](#encryption-static-key-set-up-store-key), you created a secret and s
    }
    ```
 
-   In the `Resource` section, each line represents the ARN of a different secret that you created\. For more examples, see [IAM Policy Examples for Secrets in AWS Secrets Manager](iam-policy-examples-asm-secrets.md)\.
+   In the `Resource` section, each line represents the ARN of a different secret that you created\. For more examples, see [IAM policy examples for secrets in AWS Secrets Manager](iam-policy-examples-asm-secrets.md)\.
 
 1. Choose **Review policy**\.
 
@@ -88,9 +88,9 @@ In [step 1](#encryption-static-key-set-up-store-key), you created a secret and s
 
 1. Choose **Create policy**\.
 
-## Step 3: Create an IAM Role with a Trusted Relationship<a name="encryption-static-key-set-up-create-iam-role"></a>
+## Step 3: Create an IAM role with a trusted relationship<a name="encryption-static-key-set-up-create-iam-role"></a>
 
-In [step 2](#encryption-static-key-set-up-create-iam-policy), you created an IAM policy that allows read access to the secret that you stored in AWS Secrets Manager\. In this step, you create an IAM role and assign the policy to that role\. Then you define AWS Elemental MediaConnect as a trusted entity that can assume the role\. This allows AWS Elemental MediaConnect to have read access to your secret\.
+In [step 2](#encryption-static-key-set-up-create-iam-policy), you created an IAM policy that allows read access to the secret that you stored in AWS Secrets Manager\. In this step, you create an IAM role and assign the policy to that role\. Then you define AWS Elemental MediaConnect as a trusted entity that can assume the role\. This allows MediaConnect to have read access to your secret\.
 
 **To create a role with a trusted relationship**
 

@@ -1,4 +1,4 @@
-# Monitoring the Health of a Flow<a name="monitoring-flow-health"></a>
+# Monitoring the health of a flow<a name="monitoring-flow-health"></a>
 
 \. The Alerts tab on the MediaConnect console displays a list of alerts that occurred when you started or stopped the current flow\. For the full list of alerts for a flow, see Amazon CloudWatch
 

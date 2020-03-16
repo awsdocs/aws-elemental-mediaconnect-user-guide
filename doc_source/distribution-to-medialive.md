@@ -1,4 +1,4 @@
-# Distributing Content to AWS Elemental MediaLive<a name="distribution-to-medialive"></a>
+# Distributing content to AWS Elemental MediaLive<a name="distribution-to-medialive"></a>
 
 If you plan to distribute the contents of your AWS Elemental MediaConnect flow to AWS Elemental MediaLive, remember the following:
 + For each video stream, create two flows in the same AWS Region, but in different Availability Zones \(such as `us-east-1a` and `us-east-1b`\)\. These redundant flows will serve as the primary and backup inputs for the MediaLive channel\.

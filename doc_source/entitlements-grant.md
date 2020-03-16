@@ -1,4 +1,4 @@
-# Granting an Entitlement on a Flow<a name="entitlements-grant"></a>
+# Granting an entitlement on a flow<a name="entitlements-grant"></a>
 
 You can grant an entitlement to an existing flow to share your content with another AWS account \(the subscriber account\)\. The subscriber creates an AWS Elemental MediaConnect flow in the same AWS Region, using your flow as the source\. When this happens, the service generates an output on your flow to represent the video stream from your flow to the subscriber's flow\.
 

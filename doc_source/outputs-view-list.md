@@ -1,4 +1,4 @@
-# Viewing a List of Outputs of a Flow<a name="outputs-view-list"></a>
+# Viewing a list of outputs of a flow<a name="outputs-view-list"></a>
 
 You can view a list of a flow's outputs, along with the setup that is associated with each output\. This list includes outputs that you added, as well as outputs that AWS Elemental MediaConnect added when subscribers create flows based on entitlements that you granted\.
 

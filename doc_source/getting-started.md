@@ -1,4 +1,4 @@
-# Getting Started with AWS Elemental MediaConnect<a name="getting-started"></a>
+# Getting started with AWS Elemental MediaConnect<a name="getting-started"></a>
 
 This Getting Started tutorial shows you how to use AWS Elemental MediaConnect to create and share flows\. The tutorial is based on a scenario where you want to do all of the following: 
 + Ingest a live video stream of an awards show that is taking place in New York City\.
@@ -8,15 +8,15 @@ This Getting Started tutorial shows you how to use AWS Elemental MediaConnect to
 **Topics**
 + [Prerequisites](#getting-started-prerequisites)
 + [Step 1: Access AWS Elemental MediaConnect](#getting-started-access-console)
-+ [Step 2: Create a Flow](#getting-started-create-flow)
-+ [Step 3: Add an Output](#getting-started-add-output)
-+ [Step 4: Grant an Entitlement](#getting-started-add-entitlement)
-+ [Step 5: Share Details with Your Affiliates](#getting-started-share-with-affiliates)
-+ [Step 6: Clean Up](#getting-started-clean-up)
++ [Step 2: Create a flow](#getting-started-create-flow)
++ [Step 3: Add an output](#getting-started-add-output)
++ [Step 4: Grant an entitlement](#getting-started-add-entitlement)
++ [Step 5: Share details with your affiliates](#getting-started-share-with-affiliates)
++ [Step 6: Clean up](#getting-started-clean-up)
 
 ## Prerequisites<a name="getting-started-prerequisites"></a>
 
-Before you can use AWS Elemental MediaConnect, you need an AWS account and the appropriate permissions to access, view, and edit MediaConnect components\. Complete the steps in [Setting Up AWS Elemental MediaConnect](setting-up.md), and then return to this tutorial\.
+Before you can use AWS Elemental MediaConnect, you need an AWS account and the appropriate permissions to access, view, and edit MediaConnect components\. Complete the steps in [Setting up AWS Elemental MediaConnect](setting-up.md), and then return to this tutorial\.
 
 ## Step 1: Access AWS Elemental MediaConnect<a name="getting-started-access-console"></a>
 
@@ -25,7 +25,7 @@ After you set up your AWS account and create IAM users and roles, you sign in to
 **To access AWS Elemental MediaConnect**
 + Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
-## Step 2: Create a Flow<a name="getting-started-create-flow"></a>
+## Step 2: Create a flow<a name="getting-started-create-flow"></a>
 
 First, you create an AWS Elemental MediaConnect flow to ingest your video from your on\-premises encoder into the AWS Cloud\. For the purposes of this tutorial, we use the following details:
 + Flow name: AwardsNYCShow
@@ -53,7 +53,7 @@ First, you create an AWS Elemental MediaConnect flow to ingest your video from y
 
 1. Choose **Create flow**\.
 
-## Step 3: Add an Output<a name="getting-started-add-output"></a>
+## Step 3: Add an output<a name="getting-started-add-output"></a>
 
 To send content to your affiliate in Boston, you must add an output to your flow\. This output will send your video to your Boston affiliate's on\-premises encoder\. For the purposes of this tutorial, we use the following details:
 + Output name: AwardsNYCOutput
@@ -80,7 +80,7 @@ To send content to your affiliate in Boston, you must add an output to your flow
 
 1. Choose **Create output**\.
 
-## Step 4: Grant an Entitlement<a name="getting-started-add-entitlement"></a>
+## Step 4: Grant an entitlement<a name="getting-started-add-entitlement"></a>
 
 You must grant an entitlement to allow your Philadelphia affiliate to use your content as the source for their AWS Elemental MediaConnect flow\. For purposes of this tutorial, we use the following details:
 + Entitlement name: PhillyTeam
@@ -99,7 +99,7 @@ You must grant an entitlement to allow your Philadelphia affiliate to use your c
 
 1. Choose **Grant entitlement**\.
 
-## Step 5: Share Details with Your Affiliates<a name="getting-started-share-with-affiliates"></a>
+## Step 5: Share details with your affiliates<a name="getting-started-share-with-affiliates"></a>
 
 Now that you've created your AWS Elemental MediaConnect flow with an output for your Boston affiliate and an entitlement for your Philadelphia affiliate, you need to communicate details about the flow\.
 
@@ -109,7 +109,7 @@ Your Philadelphia affiliate must create their own AWS Elemental MediaConnect flo
 + Entitlement ARN: You can find this value on the **Entitlement** tab of the **AwardsNYCShow** flow details page\.
 + Region: This is the AWS Region that you created the **AwardsNYCShow** flow in\.
 
-## Step 6: Clean Up<a name="getting-started-clean-up"></a>
+## Step 6: Clean up<a name="getting-started-clean-up"></a>
 
 To avoid extraneous charges, be sure to delete all unnecessary flows\. You must stop the flow before it can be deleted\.
 

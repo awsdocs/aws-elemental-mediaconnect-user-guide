@@ -1,4 +1,4 @@
-# What Is AWS Elemental MediaConnect?<a name="what-is"></a>
+# What is AWS Elemental MediaConnect?<a name="what-is"></a>
 
 AWS Elemental MediaConnect is a service that makes it easy for broadcasters and other premium video providers to reliably ingest live video into the AWS Cloud and distribute it to multiple destinations inside or outside the AWS Cloud\. MediaConnect provides the reliability, security, and visibility that you are used to with existing distribution methods, combined with the flexibility and cost\-effectiveness that internet\-based transmission provides\.
 
@@ -17,8 +17,8 @@ With AWS Elemental MediaConnect, you can do the following:
 + Send content from one AWS Region to another\.
 
 **Topics**
-+ [AWS Elemental MediaConnect Concepts and Terminology](what-is-concepts.md)
-+ [Related Services](what-is-related-services.md)
++ [AWS Elemental MediaConnect concepts and terminology](what-is-concepts.md)
++ [Related services](what-is-related-services.md)
 + [Accessing AWS Elemental MediaConnect](what-is-accessing.md)
 + [Pricing for AWS Elemental MediaConnect](what-is-pricing.md)
 + [Regions for AWS Elemental MediaConnect](what-is-regions.md)

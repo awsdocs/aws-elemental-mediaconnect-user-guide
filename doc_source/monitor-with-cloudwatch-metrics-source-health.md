@@ -1,4 +1,4 @@
-# AWS Elemental MediaConnect Metrics to Monitor Source Health<a name="monitor-with-cloudwatch-metrics-source-health"></a>
+# AWS Elemental MediaConnect metrics to monitor source health<a name="monitor-with-cloudwatch-metrics-source-health"></a>
 
 AWS Elemental MediaConnect sends metrics to CloudWatch\. You can review specific metrics to evaluate the health of the source of your flow\. If the flow is unhealthy, these metrics can help you determine whether the issue originates with the source\. For details about each metric, see the tables in this section\.
 
@@ -6,12 +6,12 @@ AWS Elemental MediaConnect sends metrics to CloudWatch\. You can review specific
 Metrics tracked by MediaConnect adhere to the standard as defined by the TR 101 290 spec\.
 
 **Topics**
-+ [Network Metrics](#monitor-with-cloudwatch-metrics-source-health-network)
-+ [TR 101 290 Priority 1 Metrics](#monitor-with-cloudwatch-metrics-source-health-p1)
-+ [TR 101 290 Priority 2 Metrics](#monitor-with-cloudwatch-metrics-source-health-p2)
-+ [Source Metrics](#monitor-with-cloudwatch-metrics-source-health-source)
++ [Network metrics](#monitor-with-cloudwatch-metrics-source-health-network)
++ [TR 101 290 Priority 1 metrics](#monitor-with-cloudwatch-metrics-source-health-p1)
++ [TR 101 290 Priority 2 metrics](#monitor-with-cloudwatch-metrics-source-health-p2)
++ [Source metrics](#monitor-with-cloudwatch-metrics-source-health-source)
 
-## Network Metrics<a name="monitor-with-cloudwatch-metrics-source-health-network"></a>
+## Network metrics<a name="monitor-with-cloudwatch-metrics-source-health-network"></a>
 
 The following table lists network metrics that AWS Elemental MediaConnect sends to CloudWatch\.
 
@@ -32,7 +32,7 @@ The following table lists network metrics that AWS Elemental MediaConnect sends 
 | RoundTripTime |  The amount of time it takes for the source to send a signal and receive an acknowledgment from AWS Elemental MediaConnect\. This metric applies only to sources that use the Zixi protocol\. Units: Milliseconds Valid dimensions: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)  | 
 | TotalPackets |  The total number of packets that were received\. Units: Count Valid dimensions: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)  | 
 
-## TR 101 290 Priority 1 Metrics<a name="monitor-with-cloudwatch-metrics-source-health-p1"></a>
+## TR 101 290 Priority 1 metrics<a name="monitor-with-cloudwatch-metrics-source-health-p1"></a>
 
 The following table lists TR 101 290 Priority 1 metrics that AWS Elemental MediaConnect sends to CloudWatch\.
 
@@ -46,7 +46,7 @@ The following table lists TR 101 290 Priority 1 metrics that AWS Elemental Media
 | TSByteError |  The number of times that a transport stream \(TS\) byte error occurred\. This error indicates that the sync byte did not appear after the prescribed number of bytes\. Units: Count Valid dimensions: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)  | 
 | TSSyncLoss |  The number of times that a TS sync loss error occurred\. This error happens after two or more consecutive TS byte errors\. Units: Count Valid dimensions: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)  | 
 
-## TR 101 290 Priority 2 Metrics<a name="monitor-with-cloudwatch-metrics-source-health-p2"></a>
+## TR 101 290 Priority 2 metrics<a name="monitor-with-cloudwatch-metrics-source-health-p2"></a>
 
 The following table lists TR 101 290 Priority 2 metrics that AWS Elemental MediaConnect sends to CloudWatch\.
 
@@ -60,7 +60,7 @@ The following table lists TR 101 290 Priority 2 metrics that AWS Elemental Media
 | PTSError |  The number of times that a presentation timestamp \(PTS\) error occurred\. This error happens when a presentation timestamp \(PTS\) is not received at least every 700 ms\. This can occur if the PTS is sent less frequently or not at all\. The most common cause of this error is when the transport stream is scrambled\. Units: Count Valid dimensions: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)  | 
 | TransportError |  The number of times that a primary transport error occurred\. This error indicates that the TS packet is unusable\. When this error occurs, ignore all other TR 101 290 errors for this packet\. Units: Count Valid dimensions: [\[See the AWS documentation website for more details\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/monitor-with-cloudwatch-metrics-source-health.html)  | 
 
-## Source Metrics<a name="monitor-with-cloudwatch-metrics-source-health-source"></a>
+## Source metrics<a name="monitor-with-cloudwatch-metrics-source-health-source"></a>
 
 The following table lists source metrics that AWS Elemental MediaConnect sends to CloudWatch\.
 

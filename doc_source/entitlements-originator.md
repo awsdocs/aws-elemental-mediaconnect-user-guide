@@ -1,4 +1,4 @@
-# Sharing Content with Other AWS Accounts<a name="entitlements-originator"></a>
+# Sharing content with other AWS accounts<a name="entitlements-originator"></a>
 
 You can grant an entitlement to share the content in your AWS Elemental MediaConnect flow with another AWS account \(subscriber account\)\. When the subscriber sets up a flow based on the entitlement, the service generates an output on your flow to represent the stream from your flow to the subscriber's flow\. This output is counted as part of the 50 maximum outputs that you can have on your flow\. 
 
@@ -9,7 +9,7 @@ After you grant an entitlement, you provide information about the entitlement \(
 ![\[This illustration shows the setup for sharing content across AWS Regions.\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/)
 
 **Topics**
-+ [Granting an Entitlement on a Flow](entitlements-grant.md)
-+ [Updating an Entitlement](entitlements-update.md)
-+ [Managing Tags on an Entitlement](entitlements-manage-tags.md)
-+ [Revoking an Entitlement](entitlements-revoke.md)
++ [Granting an entitlement on a flow](entitlements-grant.md)
++ [Updating an entitlement](entitlements-update.md)
++ [Managing tags on an entitlement](entitlements-manage-tags.md)
++ [Revoking an entitlement](entitlements-revoke.md)

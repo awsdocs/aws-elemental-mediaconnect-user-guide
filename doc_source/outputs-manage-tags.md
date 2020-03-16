@@ -1,4 +1,4 @@
-# Managing Tags on an Output<a name="outputs-manage-tags"></a>
+# Managing tags on an output<a name="outputs-manage-tags"></a>
 
 You can use tags to help you track the billing and organization for your AWS Elemental MediaConnect flows, entitlements, and outputs\. These are the same tags that AWS Billing and Cost Management provides for organizing your AWS bill\. For more information about using tags for cost allocation, see [Use Cost Allocation Tags for Custom Billing Reports](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/allocation.html) in the *AWS Billing and Cost Management User Guide*\. 
 
@@ -12,7 +12,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
    A list of outputs for that flow appears\.
 
-1. Choose the option for the output that you want to add tags to\.
+1. Choose the output that you want to add tags to\.
 
 1. Choose **Manage tags**\.
 
@@ -36,7 +36,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
    A list of outputs for that flow appears\.
 
-1. Choose the option for the output that you want to edit tags for\.
+1. Choose the output that you want to edit tags for\.
 
 1. In the **Details** section, choose **Manage tags**\.
 
@@ -56,7 +56,7 @@ You can use tags to help you track the billing and organization for your AWS Ele
 
    A list of outputs for that flow appears\.
 
-1. Choose the option for the output that you want to remove tags from\.
+1. Choose the output that you want to remove tags from\.
 
 1. In the **Details** section, choose **Manage tags**\.
 

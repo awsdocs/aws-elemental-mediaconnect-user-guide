@@ -1,4 +1,4 @@
-# Setting Up SPEKE Encryption Using AWS Elemental MediaConnect<a name="encryption-speke-set-up"></a>
+# Setting up SPEKE encryption using AWS Elemental MediaConnect<a name="encryption-speke-set-up"></a>
 
 Before you can grant an entitlement that uses SPEKE encryption, you must perform the following steps:
 
@@ -8,7 +8,7 @@ Before you can grant an entitlement that uses SPEKE encryption, you must perform
 
 **[Step 3\.](#encryption-speke-set-up-create-iam-role)** – Create an IAM role and attach the policy that you created in step 2\. Next, set up AWS Elemental MediaConnect as a trusted entity that is allowed to assume this role and access the API Gateway endpoint on your behalf\.
 
-## Step 1: Get On Board with a CA Provider<a name="encryption-speke-set-up-on-board-key-provider"></a>
+## Step 1: Get on board with a CA provider<a name="encryption-speke-set-up-on-board-key-provider"></a>
 
 To use SPEKE with AWS Elemental MediaConnect, you must have a CA platform key provider\. The following AWS partners provide conditional access \(CA\) solutions for the MediaConnect customization of SPEKE:
 + [Verimatrix](https://aws.amazon.com/partners/find/partnerdetails/?n=Verimatrix&id=001E000000be2SEIAY)
@@ -24,7 +24,7 @@ During the onboarding process, make a note of the following:
 
 You need these values later, when you configure the [entitlement](entitlements-grant.md) in MediaConnect\. 
 
-## Step 2: Create an IAM Policy to Allow API Gateway to Act as Your Proxy<a name="encryption-speke-set-up-create-iam-policy"></a>
+## Step 2: Create an IAM policy to allow API Gateway to act as your proxy<a name="encryption-speke-set-up-create-iam-policy"></a>
 
 In [step 1](#encryption-speke-set-up-on-board-key-provider), you worked with a CA platform key provider who manages your encryption key\. In this step, you create an IAM policy that allows API Gateway to make requests on your behalf\. API Gateway acts as a proxy for communication between your account and the key provider\. 
 
@@ -61,7 +61,7 @@ In [step 1](#encryption-speke-set-up-on-board-key-provider), you worked with a C
 
 1. Choose **Create policy**\.
 
-## Step 3: Create an IAM Role with a Trusted Relationship<a name="encryption-speke-set-up-create-iam-role"></a>
+## Step 3: Create an IAM role with a trusted relationship<a name="encryption-speke-set-up-create-iam-role"></a>
 
 In [step 2](#encryption-speke-set-up-create-iam-policy), you created an **APIGateway\-Proxy\-Access** policy that allows API Gateway to act as a proxy and make requests on your behalf\. In this step, you create an IAM role and attach the following permissions: 
 + The **APIGateway\-Proxy\-Access** policy allows Amazon API Gateway to act as a proxy on your behalf so that it can make requests between your account and the CA platform key provider\. This is the policy you created in step 1\.

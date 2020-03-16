@@ -9,9 +9,9 @@ Security is a shared responsibility between AWS and you\. The [shared responsibi
 This documentation helps you understand how to apply the shared responsibility model when using AWS Elemental MediaConnect\. The following topics show you how to configure AWS Elemental MediaConnect to meet your security and compliance objectives\. You also learn how to use other AWS services that help you to monitor and secure your AWS Elemental MediaConnect resources\. 
 
 **Topics**
-+ [Data Protection for AWS Elemental MediaConnect](data-protection.md)
-+ [Identity and Access Management for AWS Elemental MediaConnect](security-iam.md)
-+ [Logging and Monitoring](incident-response.md)
-+ [Compliance Validation for AWS Elemental MediaConnect](mediaconnect-compliance.md)
++ [Data protection for AWS Elemental MediaConnect](data-protection.md)
++ [Identity and access management for AWS Elemental MediaConnect](security-iam.md)
++ [Logging and monitoring](incident-response.md)
++ [Compliance validation for AWS Elemental MediaConnect](mediaconnect-compliance.md)
 + [Resilience in AWS Elemental MediaConnect](disaster-recovery-resiliency.md)
-+ [Infrastructure Security in AWS Elemental MediaConnect](infrastructure-security.md)
++ [Infrastructure security in AWS Elemental MediaConnect](infrastructure-security.md)

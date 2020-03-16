@@ -1,4 +1,4 @@
-# Data Protection for AWS Elemental MediaConnect<a name="data-protection"></a>
+# Data protection for AWS Elemental MediaConnect<a name="data-protection"></a>
 
 You can protect your data using tools that are provided by AWS\. AWS Elemental MediaConnect can decrypt your incoming video \(source\) and encrypt your outgoing video \(outputs and entitlements\)\. 
 
@@ -18,5 +18,5 @@ You can protect your data using tools that are provided by AWS\. AWS Elemental M
 Encryption is supported only for entitlements and for sources and outputs that use the Zixi protocol\.
 
 **Topics**
-+ [Static Key Encryption in AWS Elemental MediaConnect](encryption-static-key.md)
-+ [SPEKE Encryption in AWS Elemental MediaConnect](encryption-speke.md)
++ [Static key encryption in AWS Elemental MediaConnect](encryption-static-key.md)
++ [SPEKE encryption in AWS Elemental MediaConnect](encryption-speke.md)

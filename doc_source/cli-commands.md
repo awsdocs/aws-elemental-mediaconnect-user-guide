@@ -1,4 +1,4 @@
-# AWS CLI Commands for AWS Elemental MediaConnect<a name="cli-commands"></a>
+# AWS CLI commands for AWS Elemental MediaConnect<a name="cli-commands"></a>
 
 The following table shows the AWS CLI commands that you can use to create or modify flows in AWS Elemental MediaConnect\.
 
