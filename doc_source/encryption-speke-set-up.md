@@ -104,10 +104,9 @@ In [step 2](#encryption-speke-set-up-create-iam-policy), you created an **APIGat
      "Version": "2012-10-17",
      "Statement": [
        {
-         "Sid": "",
          "Effect": "Allow",
          "Principal": {
-           "Service": "mantaray.aws.internal"
+           "Service": "mediaconnect.amazonaws.com"
          },
          "Action": "sts:AssumeRole"
        }
