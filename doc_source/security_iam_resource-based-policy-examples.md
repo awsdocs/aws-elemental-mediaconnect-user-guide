@@ -136,3 +136,29 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
     ]
 }
 ```
+
+## Allow AWS Elemental MediaConnect to create and manage network interfaces in your VPC<a name="iam-policy-examples-for-mediaconnect-vpc"></a>
+
+This example IAM policy allows AWS Elemental MediaConnect to create and manage network interfaces in your VPC so that content can flow from your VPC to MediaConnect\. If you want to connect your VPC to your flow, you must set up this policy\.
++ The section for the `ec2:` actions allows MediaConnect to create, read, update, and delete network interfaces in your VPC\. This portion of the policy is required\.
+
+```
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Action": [
+                "ec2:describeNetworkInterfaces",
+                "ec2:describeSecurityGroups",
+                "ec2:describeSubnets",
+                "ec2:createNetworkInterface",
+                "ec2:createNetworkInterfacePermission",
+                "ec2:deleteNetworkInterface",
+                "ec2:deleteNetworkInterfacePermission"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        }
+    ]
+}
+```

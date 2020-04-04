@@ -2,4 +2,6 @@
 
 You can add a second source to an existing flow for failover\. Both sources on the flow must  use the same protocol\. \(However, you can have one source that uses RTP and the other that uses RTP\-FEC\.\) For more information about source failover, see [Source failover](source-failover.md)\.
 
-You can only add a second source that is a [standard source](source-adding-standard.md)\. Failover sources that use an entitlement are not supported\.
+The method you use to add a second source to a flow is dependent on the type of source that you want to use:
++ [Standard source](source-adding-standard.md) – Uses content from any source that is not a VPC source or an entitled source\.
++ [VPC source](source-adding-vpc.md) – Uses content that comes from a VPC that you configure\.

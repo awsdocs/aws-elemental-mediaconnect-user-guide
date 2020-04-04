@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [VPC sources](vpc-interfaces.md) | You can now connect your VPC to your AWS Elemental MediaConnect flow and send content to your flow without going over the public internet\. | March 31, 2020 | 
 | [Source failover](source-failover.md) | You can now enable source failover and add a second \(redundant\) source to your flow\. | March 13, 2020 | 
 | [Service quotas \(outputs\)](quotas.md) | You can now add up to 50 outputs to each flow\. | February 7, 2020 | 
 | [Sharing the entitlement data transfer fee with the subscriber](entitlements-grant.md) | When you grant an entitlement, you can now specify the percentage of the entitlement data transfer fee that you want the subscriber to be responsible for\. | September 16, 2019 | 

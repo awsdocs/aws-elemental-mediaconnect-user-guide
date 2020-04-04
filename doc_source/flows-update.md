@@ -5,3 +5,4 @@ You can change a flow's source, entitlements, and outputs even if the flow is ru
 + [Updating the source](source-update.md)
 + [Updating outputs](outputs-update.md)
 + [Updating entitlements](entitlements-update.md)
++ [Adding a VPC interface to a flow](vpc-interface-add.md)

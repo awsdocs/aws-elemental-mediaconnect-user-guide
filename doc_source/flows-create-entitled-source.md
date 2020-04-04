@@ -12,7 +12,9 @@ A flow consists of one source, a name, and an Availability Zone\. The ability to
 **Note**  
 MediaConnect allows you to create multiple flows with the same name\. However, we encourage you to use unique flow names within an AWS Region to help with organization\. After you create a flow, you can't change the name\.
 
-1. For **Availability Zone**, choose an Availability Zone for your flow\. Use this option when you are setting up redundant flows\. Otherwise, you can leave this as **Any**\. If you leave the default, the service will randomly assign an Availability Zone within the current AWS Region\.
+1. For **Availability Zone**, choose an Availability Zone for your flow\. Use this option when you are setting up redundant flows\. Otherwise, you can leave this as **Any**\. If you leave the default, the service will randomly assign an Availability Zone within the current AWS Region , or if your source comes from a VPC, the service will assign the Availability Zone of the VPC subnet to the flow\.
+**Note**  
+If your source comes from your VPC, the Availability Zone of your flow must match that of your VPC subnet\. We recommend that you leave this as **Any** and let the service ensure that the Availability Zone is set correctly\.
 
 1. In the **Source** section, for **Source type** choose **Entitled source**\.
 

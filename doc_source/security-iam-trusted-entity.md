@@ -19,6 +19,7 @@ In this step, you create an IAM policy that governs which actions you want to al
 1. Choose **Create policy**, and then choose the **JSON** tab\.
 
 1. Enter a policy that uses the JSON format\. For examples, see the following:
+   + [ Policy example for connecting to your VPC](security_iam_resource-based-policy-examples.md#iam-policy-examples-for-mediaconnect-vpc)
    + [Policy examples for secrets in AWS Secrets Manager](iam-policy-examples-asm-secrets.md)
 
 1. Choose **Review policy**\.
@@ -47,7 +48,11 @@ In [step 1](#security-iam-trusted-entity-create-policy), you created an IAM poli
 
 1. For **Attach permissions policies**, enter the name of the policy that you created in [step 1](#security-iam-trusted-entity-create-policy)\. 
 
-1. Select the check box next to the name of the policy, and then choose **Next: Review**\.
+1. Select the check box next to the name of the policy, and then choose **Next: Tags**\.
+
+1. \(Optional\) Add metadata to the user by attaching tags as key\-value pairs\. For more information about using tags in IAM, see [Tagging IAM Entities](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_tags.html) in the *IAM User Guide*\.
+
+1. Choose **Next: Review**\.
 
 1. For **Role name**, enter a name\. The name `MediaConnectAccessRole` is reserved, so you can't use it\. Instead, use a name that includes `MediaConnect` and describes this role's purpose\.
 

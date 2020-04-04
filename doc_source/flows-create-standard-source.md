@@ -2,7 +2,7 @@
 
 A flow consists of one source, a name, and an Availability Zone\. The ability to choose an Availability Zone allows you to create multiple flows within an AWS Region for redundancy\. After you create a flow, you can add up to 50 outputs and up to 50 entitlements\.
 
-A flow uses a *standard* source when the content comes from anywhere other than another AWS account \([entitled source](flows-create-entitled-source.md)\)\.
+A flow uses a *standard* source when the content comes from anywhere other than a VPC \([VPC source](flows-create-vpc-source.md)\) or another AWS account \([entitled source](flows-create-entitled-source.md)\)\.
 
 **Important**  
 If the source of your flow requires encryption, [set up encryption](encryption-static-key-set-up.md) before you begin this procedure\. 
@@ -17,7 +17,7 @@ If the source of your flow requires encryption, [set up encryption](encryption-s
 **Note**  
 MediaConnect allows you to create multiple flows with the same name\. However, we encourage you to use unique flow names within an AWS Region to help with organization\. After you create a flow, you can't change the name\.
 
-1. For **Availability Zone**, choose an Availability Zone for your flow\. Use this option when you are setting up redundant flows\. Otherwise, you can leave this as **Any**\. If you leave the default, the service will randomly assign an Availability Zone within the current AWS Region\.
+1. For **Availability Zone**, choose an Availability Zone for your flow\. Use this option when you are setting up redundant flows\. Otherwise, you can leave this as **Any**\. If you leave the default, the service will randomly assign an Availability Zone within the current AWS Region, or if your source comes from a VPC, the service will assign the Availability Zone of the VPC subnet to the flow\.
 
 1. Determine which protocol your source uses\.
 **Note**  

@@ -31,6 +31,7 @@ To ensure that those entities can still use the MediaConnect console, also attac
         },
         
          {
+>>>>>>> origin/mainline
             "Action": [
                 "cloudwatch:GetMetricStatistics"
             ],

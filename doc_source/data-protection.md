@@ -20,3 +20,4 @@ Encryption is supported only for entitlements and for sources and outputs that u
 **Topics**
 + [Static key encryption in AWS Elemental MediaConnect](encryption-static-key.md)
 + [SPEKE encryption in AWS Elemental MediaConnect](encryption-speke.md)
++ [Internetwork traffic privacy](internetwork-traffic-privacy.md)
