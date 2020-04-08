@@ -7,3 +7,4 @@ For more information, see the following sections\.
 + [Adding a VPC interface to a flow](vpc-interface-add.md)
 + [Removing a VPC interface from a flow](vpc-interface-remove.md)
 + [Adding a VPC source to an existing flow ](source-adding-vpc.md)
++ [Adding VPC outputs to a flow](outputs-add-vpc.md)

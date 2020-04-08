@@ -58,6 +58,8 @@ Amazon's trademarks and trade dress may not be used in
    + [Source ports](source-ports.md)
 + [Outputs in AWS Elemental MediaConnect](outputs.md)
    + [Adding outputs to a flow](outputs-add.md)
+      + [Adding standard outputs to a flow](outputs-add-standard.md)
+      + [Adding VPC outputs to a flow](outputs-add-vpc.md)
    + [Viewing a list of outputs of a flow](outputs-view-list.md)
    + [Updating outputs on a flow](outputs-update.md)
    + [Managing tags on an output](outputs-manage-tags.md)
