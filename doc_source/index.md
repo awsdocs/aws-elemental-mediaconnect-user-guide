@@ -75,6 +75,7 @@ Amazon's trademarks and trade dress may not be used in
 + [VPC interfaces](vpc-interfaces.md)
    + [Adding a VPC interface to a flow](vpc-interface-add.md)
    + [Removing a VPC interface from a flow](vpc-interface-remove.md)
+   + [Security group considerations for VPC interfaces](vpc-interface-security-groups.md)
 + [Distributing content using AWS Elemental MediaConnect](distribute-content.md)
    + [Distributing content across Regions](distribution-across-regions.md)
    + [Distributing content to AWS Elemental MediaLive](distribution-to-medialive.md)

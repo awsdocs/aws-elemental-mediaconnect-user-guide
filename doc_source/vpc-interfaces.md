@@ -8,3 +8,4 @@ For more information, see the following sections\.
 + [Removing a VPC interface from a flow](vpc-interface-remove.md)
 + [Adding a VPC source to an existing flow ](source-adding-vpc.md)
 + [Adding VPC outputs to a flow](outputs-add-vpc.md)
++ [Security group considerations for VPC interfaces](vpc-interface-security-groups.md)

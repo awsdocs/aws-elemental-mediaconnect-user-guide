@@ -6,7 +6,7 @@ When you create a flow that uses a source from your virtual private cloud \(VPC\
 
 **Important**  
 Before you begin this procedure, make sure that the following steps have been completed:  
-In Amazon VPC, set up your VPC\. For more information, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)\.
+In Amazon VPC, set up your VPC and associated security groups\. For more information about VPCs, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)\. For information about configuring security groups to work with your VPC interface, see [Security group considerations](vpc-interface-security-groups.md)\.
 In IAM, [set up MediaConnect as a trusted service](security-iam-trusted-entity.md)\.
 If the source of your flow requires encryption, [set up encryption](encryption-static-key-set-up.md)\.
 

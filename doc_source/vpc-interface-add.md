@@ -4,7 +4,7 @@ To avoid streaming your content over the public internet, you can add a VPC inte
 
 **Important**  
 Before you begin this procedure, make sure that the following steps have been completed:  
-In Amazon VPC, set up your VPC\. For more information, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)\.
+In Amazon VPC, set up your VPC and associated security groups\. For more information about VPCs, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)\. For information about configuring security groups to work with your VPC interface, see [Security group considerations](vpc-interface-security-groups.md)\.
 In IAM, [set up MediaConnect as a trusted service](security-iam-trusted-entity.md)\.
 
 **To add a VPC interface to a flow \(console\)**
