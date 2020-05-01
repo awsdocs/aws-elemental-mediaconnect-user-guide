@@ -46,7 +46,6 @@ Amazon's trademarks and trade dress may not be used in
    + [Updating a flow](flows-update.md)
    + [Managing tags on a flow](flows-manage-tags.md)
    + [Deleting a flow](flows-delete.md)
-   + [Previewing a Flow](flows-preview.md)
 + [Sources in AWS Elemental MediaConnect](sources.md)
    + [Source failover](source-failover.md)
    + [Adding a source to an existing flow](source-adding.md)

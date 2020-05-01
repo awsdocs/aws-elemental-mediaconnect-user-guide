@@ -1,6 +1,6 @@
 # Monitoring the health of a flow<a name="monitoring-flow-health"></a>
 
-\. The Alerts tab on the MediaConnect console displays a list of alerts that occurred when you started or stopped the current flow\. For the full list of alerts for a flow, see Amazon CloudWatch
+The Alerts tab on the MediaConnect console displays a list of alerts that occurred when you started or stopped the current flow\. For the full list of alerts for a flow, see Amazon CloudWatch
 
 MediaConnect displays the following alerts on the Alerts tab:
 + The entitlement that this flow is based on is already in use\. This occurs if you create more than one flow based on the same entitlement\. If the one of those flows is already running, MediaConnect displays an alert if you try to start the second flow\.

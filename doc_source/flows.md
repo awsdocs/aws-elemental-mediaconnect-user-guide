@@ -15,4 +15,3 @@ It is important to manage the number of outputs and entitlements that you create
 + [Updating a flow](flows-update.md)
 + [Managing tags on a flow](flows-manage-tags.md)
 + [Deleting a flow](flows-delete.md)
-+ [Previewing a Flow](flows-preview.md)

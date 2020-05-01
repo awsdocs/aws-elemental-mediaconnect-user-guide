@@ -29,9 +29,17 @@ To ensure that those entities can still use the MediaConnect console, also attac
             "Effect": "Allow",
             "Resource": "*"
         },
-        
-         {
->>>>>>> origin/mainline
+        {
+            "Action": [
+                "ec2:DescribeAvailabilityZones",
+                "ec2:DescribeSubnets",
+                "ec2:DescribeVpcs",
+                "ec2:SecurityGroups"
+            ],
+            "Effect": "Allow",
+            "Resource": "*"
+        },
+        {
             "Action": [
                 "cloudwatch:GetMetricStatistics"
             ],

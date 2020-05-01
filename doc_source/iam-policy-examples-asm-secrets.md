@@ -13,24 +13,24 @@ The following IAM policy allows read access to specific resources \(secrets\) th
 
 ```
 {
-              "Version": "2012-10-17",
-              "Statement": [
-                {
-                  "Effect": "Allow",
-                  "Action": [
-                    "secretsmanager:GetResourcePolicy",
-                    "secretsmanager:GetSecretValue",
-                    "secretsmanager:DescribeSecret",
-                    "secretsmanager:ListSecretVersionIds"
-                  ],
-                  "Resource": [
-                    "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes128-1a2b3c",
-                    "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes192-4D5e6F",
-                    "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes256-7g8H9i"
-                  ]
-                }
-              ]
-            }
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "secretsmanager:GetResourcePolicy",
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:ListSecretVersionIds"
+            ],
+            "Resource": [
+                "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes128-1a2b3c",
+                "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes192-4D5e6F",
+                "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes256-7g8H9i"
+            ]
+        }
+    ]
+}
 ```
 
 ## Allow read access to all secrets created in a specific Region in AWS Secrets Manager<a name="iam-policy-examples-asm-secrets-in-a-region"></a>
@@ -39,22 +39,22 @@ The following IAM policy allows read access to all secrets that you create in a 
 
 ```
 {
-              "Version": "2012-10-17",
-              "Statement": [
-                {
-                  "Effect": "Allow",
-                  "Action": [
-                    "secretsmanager:GetResourcePolicy",
-                    "secretsmanager:GetSecretValue",
-                    "secretsmanager:DescribeSecret",
-                    "secretsmanager:ListSecretVersionIds"
-                  ],
-                  "Resource": [
-                    "arn:aws:secretsmanager:us-west-2:111122223333:secret:*"
-                  ]
-                }
-              ]
-            }
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "secretsmanager:GetResourcePolicy",
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:ListSecretVersionIds"
+            ],
+            "Resource": [
+                "arn:aws:secretsmanager:us-west-2:111122223333:secret:*"
+            ]
+        }
+    ]
+}
 ```
 
 ## Allow read access to all resources in AWS Secrets Manager<a name="iam-policy-examples-asm-secrets-all"></a>
@@ -63,18 +63,20 @@ The following IAM policy allows read access to all resources that you create in 
 
 ```
 {
-              "Version": "2012-10-17",
-              "Statement": [
-                {
-                  "Effect": "Allow",
-                  "Action": [
-                    "secretsmanager:GetResourcePolicy",
-                    "secretsmanager:GetSecretValue",
-                    "secretsmanager:DescribeSecret",
-                    "secretsmanager:ListSecretVersionIds"
-                  ],
-                  "Resource": ["*"]
-                }
-              ]
-            }
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "secretsmanager:GetResourcePolicy",
+                "secretsmanager:GetSecretValue",
+                "secretsmanager:DescribeSecret",
+                "secretsmanager:ListSecretVersionIds"
+            ],
+            "Resource": [
+                "*"
+            ]
+        }
+    ]
+}
 ```
