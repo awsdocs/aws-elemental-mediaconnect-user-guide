@@ -113,4 +113,4 @@ Amazon's trademarks and trade dress may not be used in
 + [Quotas in AWS Elemental MediaConnect](quotas.md)
 + [AWS Elemental MediaConnect related information](resources.md)
 + [Document history for user guide](doc-history.md)
-+ [AWS Glossary](glossary.md)
++ [AWS glossary](glossary.md)

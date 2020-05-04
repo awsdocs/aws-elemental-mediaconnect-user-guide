@@ -70,16 +70,16 @@ In [step 1](#security-iam-trusted-entity-create-policy), you created an IAM poli
 
    ```
    {
-     "Version": "2012-10-17",
-     "Statement": [
-       {
-         "Effect": "Allow",
-         "Principal": {
-           "Service": "mediaconnect.amazonaws.com",
-         },
-         "Action": "sts:AssumeRole",
-       },
-     ],
+       "Version": "2012-10-17",
+       "Statement": [
+           {
+               "Effect": "Allow",
+               "Principal": {
+                   "Service": "mediaconnect.amazonaws.com"
+               },
+               "Action": "sts:AssumeRole"
+           }
+       ]
    }
    ```
 
