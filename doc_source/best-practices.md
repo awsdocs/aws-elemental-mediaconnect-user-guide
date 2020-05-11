@@ -13,7 +13,7 @@ For the best performance and availability, follow best practices when you config
   + [Add a second source](source-adding.md) to each flow\. If there are errors in the stream, MediaConnect can use packets from a redundant source or switch to the redundant source completely\.
 
 ## Reliability<a name="best-practices-reliability"></a>
-+ Set up Amazon CloudWatch metrics and alarms to track the health of your source\. For information about which metrics to monitor, see [Monitoring](monitor.md)\.
++ Set up Amazon CloudWatch metrics and alarms to track the health of your source\. For information about which metrics to monitor, see [Monitoring and tagging](monitor.md)\.
 
 ## Security<a name="best-practices-security"></a>
 + The CIDR block on the flow source should be as precise as possible\. Include only the IP addresses that you want to contribute content to your flow\. If the CIDR block is too wide, it allows for the possibility of outside parties sending content to your flow\.

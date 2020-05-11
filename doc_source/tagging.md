@@ -10,32 +10,7 @@ Tags help you do the following:
 
 The following sections provide more information about tags for AWS Elemental MediaConnect\.
 
-## Supported resources in AWS Elemental MediaConnect<a name="supported-resources"></a>
-
-The following resources in AWS Elemental MediaConnect support tagging: 
-+ Flows
-+ Entitlements
-+ Outputs
-
-For information about adding and managing tags, see [Managing tags](#tagging-add-edit-delete)\.
-
-AWS Elemental MediaConnect doesn't support the tag\-based access control feature of AWS Identity and Access Management \(IAM\)\. 
-
-## Tag naming and usage conventions<a name="tagging-restrictions"></a>
-
-The following basic naming and usage conventions apply to using tags with AWS Elemental MediaConnect resources:
-+ Each resource can have a maximum of 50 tags\.
-+ For each resource, each tag key must be unique, and each tag key can have only one value\.
-+ The maximum tag key length is 128 Unicode characters in UTF\-8\.
-+ The maximum tag value length is 256 Unicode characters in UTF\-8\.
-+ Allowed characters are letters, numbers, spaces representable in UTF\-8, and the following characters:*** \. : \+ = @ \_ / \-*** \(hyphen\)\. Amazon EC2 resources allow any characters\.
-+ Tag keys and values are case sensitive\. As a best practice, decide on a strategy for capitalizing tags, and consistently implement that strategy across all resource types\. For example, decide whether to use `Costcenter`, `costcenter`, or `CostCenter`, and use the same convention for all tags\. Avoid using similar tags with inconsistent case treatment\. 
-+ The `aws:` prefix is prohibited for tags; it's reserved for AWS use\. You can't edit or delete tag keys or values with this prefix\. Tags with this prefix do not count against your tags per resource quota\.
-
-## Managing tags<a name="tagging-add-edit-delete"></a>
-
-Tags are made up of the `Key` and `Value` properties on a resource\. You can use the AWS Elemental MediaConnect console, the AWS CLI, or the AWS Elemental MediaConnect API to add, edit, or delete the values for these properties\. For information about working with tags, see the following:
-+ [Resources](https://docs.aws.amazon.com/mediaconnect/latest/api/resources.html) in the *AWS Elemental MediaConnect API Reference*
-+ [Managing tags on a flow](flows-manage-tags.md) in this guide
-+ [Managing tags on an entitlement](entitlements-manage-tags.md) in this guide
-+ [Managing tags on an output](outputs-manage-tags.md) in this guide 
+**Topics**
++ [Supported resources in AWS Elemental MediaConnect](supported-resources.md)
++ [Tag naming and usage conventions](tagging-restrictions.md)
++ [Managing tags](tagging-add-edit-delete.md)

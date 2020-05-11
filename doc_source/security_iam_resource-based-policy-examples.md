@@ -7,7 +7,7 @@ To access the AWS Elemental MediaConnect console, you must have a minimum set of
 To access the AWS Elemental MediaConnect console, you must have a policy that defines which actions you are allowed to take on MediaConnect resources in your AWS account\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:List*` and `mediaconnect:Describe*` actions allow read\-only access to all resources that you create in AWS Elemental MediaConnect\.
 + The section for the `ec2:DescribeAvailabilityZones` action allows the service to obtain information about which Availability Zone the flow is in\. This portion of the policy is required\.
-+ The section for the `cloudwatch:GetMetricStatistics` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
++ The section for the `cloudwatch:GetMetricData` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
 + The section for the `iam:PassRole` action allows IAM to *pass* a role to AWS Elemental MediaConnect the service to communicate with IAM in order to assume a role on behalf of the service\. This allows the service to assume the role later and perform actions on your behalf\. This portion of the policy is required\.
 
 ```
@@ -31,7 +31,7 @@ To access the AWS Elemental MediaConnect console, you must have a policy that de
         },
          {
             "Action": [
-                "cloudwatch:GetMetricStatistics"
+                "cloudwatch:GetMetricData"
             ],
             "Effect": "Allow",
             "Resource": "*"
@@ -52,7 +52,7 @@ To access the AWS Elemental MediaConnect console, you must have a policy that de
 Every user of AWS Elemental MediaConnect must have a policy that defines permissions on MediaConnect resources\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:*` action all AWS Elemental MediaConnect actions on a specific resource\.
 + The section for the `ec2:DescribeAvailabilityZones` action allows the service to obtain information about which Availability Zone the flow is in\. This portion of the policy is required and should apply to all resources\.
-+ The section for the `cloudwatch:GetMetricStatistics` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required and should apply to all resources\.
++ The section for the `cloudwatch:GetMetricData` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required and should apply to all resources\.
 + The section for the `iam:PassRole` action allows IAM to *pass* a role to AWS Elemental MediaConnect the service to communicate with IAM in order to assume a role on behalf of the service\. This allows the service to assume the role later and perform actions on your behalf\. This portion of the policy is required\. It can be applied to all resources, as shown in the example below, or to a specific resource\.
 
 ```
@@ -77,7 +77,7 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
         },
          {
             "Action": [
-                "cloudwatch:GetMetricStatistics"
+                "cloudwatch:GetMetricData"
             ],
             "Effect": "Allow",
             "Resource": "*"
@@ -98,7 +98,7 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
 Every user of AWS Elemental MediaConnect must have a policy that defines permissions on AWS Elemental MediaConnect resources\. The IAM policy below provides the following permissions:
 + The section for the `mediaconnect:*` action allows all actions on all resources that you create in AWS Elemental MediaConnect\.
 + The section for the `ec2:DescribeAvailabilityZones` action allows the service to obtain information about which Availability Zone the flow is in\. This portion of the policy is required\.
-+ The section for the `cloudwatch:GetMetricStatistics` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
++ The section for the `cloudwatch:GetMetricData` action allows the service to obtain metrics from Amazon CloudWatch\. This portion of the policy is required\.
 + The section for the `iam:PassRole` action allows IAM to *pass* a role to AWS Elemental MediaConnect the service to communicate with IAM in order to assume a role on behalf of the service\. This allows the service to assume the role later and perform actions on your behalf\. This portion of the policy is required\.
 
 ```
@@ -121,7 +121,7 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
         },
          {
             "Action": [
-                "cloudwatch:GetMetricStatistics"
+                "cloudwatch:GetMetricData"
             ],
             "Effect": "Allow",
             "Resource": "*"

@@ -34,7 +34,7 @@ Create two policies for AWS Elemental MediaConnect: one to provide read/write ac
               },
                {
                   "Action": [
-                      "cloudwatch:GetMetricStatistics"
+                      "cloudwatch:GetMetricData"
                   ],
                   "Effect": "Allow",
                   "Resource": "*"
@@ -83,7 +83,7 @@ Create two policies for AWS Elemental MediaConnect: one to provide read/write ac
               },
                {
                   "Action": [
-                      "cloudwatch:GetMetricStatistics"
+                      "cloudwatch:GetMetricData"
                   ],
                   "Effect": "Allow",
                   "Resource": "*"

@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Source health metrics](monitor-source-health.md) | In the MediaConnect console, you can view Amazon CloudWatch metrics that show the health of the source over a period of time\.  | May 11, 2020 | 
 | [VPC outputs](outputs-add-vpc.md) | You can now add an output to send content from your AWS Elemental MediaConnect flow to your VPC without going over the public internet\. | April 7, 2020 | 
 | [VPC sources](vpc-interfaces.md) | You can now connect your VPC to your AWS Elemental MediaConnect flow and send content to your flow without going over the public internet\. | March 31, 2020 | 
 | [Source failover](source-failover.md) | You can now enable source failover and add a second \(redundant\) source to your flow\. | March 13, 2020 | 

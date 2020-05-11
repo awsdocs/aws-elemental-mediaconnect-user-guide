@@ -1,6 +1,6 @@
 # Logging and monitoring<a name="incident-response"></a>
 
-This section provides an overview of the options for logging and monitoring in AWS Elemental MediaConnect for security purposes\. For more information about logging and monitoring in MediaConnect see [Monitoring AWS Elemental MediaConnect](monitor.md)\.
+This section provides an overview of the options for logging and monitoring in AWS Elemental MediaConnect for security purposes\. For more information about logging and monitoring in MediaConnect see [Monitoring and tagging in AWS Elemental MediaConnect](monitor.md)\.
 
 Monitoring is an important part of maintaining the reliability, availability, and performance of AWS Elemental MediaConnect and your AWS solutions\. You should collect monitoring data from all of the parts of your AWS solution so that you can more easily debug a multi\-point failure if one occurs\. AWS provides several tools for monitoring your MediaConnect resources and responding to potential incidents:
 

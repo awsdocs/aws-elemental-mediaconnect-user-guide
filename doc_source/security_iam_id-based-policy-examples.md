@@ -46,7 +46,7 @@ To ensure that those entities can still use the MediaConnect console, also attac
     },
     {
       "Action": [
-        "cloudwatch:GetMetricStatistics"
+        "cloudwatch:GetMetricData"
       ],
       "Effect": "Allow",
       "Resource": "*"

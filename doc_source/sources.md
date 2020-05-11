@@ -6,10 +6,11 @@ Each AWS Elemental MediaConnect flow has at least one source and as many as two 
 + An AWS Elemental MediaLive output
 + A playout system \(cloud\-based or on\-premises\)
 
+From the MediaConnect console, you can view Amazon CloudWatch metrics to [monitor the source health](monitor-source-health.md) of an active flow\.
+
 **Topics**
 + [Source failover](source-failover.md)
 + [Adding a source to an existing flow](source-adding.md)
 + [Updating the source of a flow](source-update.md)
 + [Removing a source from a flow](source-remove.md)
-+ [Confirming the connection of a flow to its source](source-confirm-connection.md)
 + [Source ports](source-ports.md)
