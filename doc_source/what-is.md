@@ -21,4 +21,4 @@ With AWS Elemental MediaConnect, you can do the following:
 + [Related services](what-is-related-services.md)
 + [Accessing AWS Elemental MediaConnect](what-is-accessing.md)
 + [Pricing for AWS Elemental MediaConnect](what-is-pricing.md)
-+ [Regions for AWS Elemental MediaConnect](what-is-regions.md)
++ [Regions and endpoints for AWS Elemental MediaConnect](what-is-regions.md)

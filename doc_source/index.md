@@ -19,7 +19,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Related services](what-is-related-services.md)
    + [Accessing AWS Elemental MediaConnect](what-is-accessing.md)
    + [Pricing for AWS Elemental MediaConnect](what-is-pricing.md)
-   + [Regions for AWS Elemental MediaConnect](what-is-regions.md)
+   + [Regions and endpoints for AWS Elemental MediaConnect](what-is-regions.md)
 + [AWS Elemental MediaConnect use cases](use-cases.md)
    + [Use case: contribution](use-cases-contribution.md)
    + [Use case: distribution](use-cases-distribution.md)

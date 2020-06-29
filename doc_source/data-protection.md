@@ -15,7 +15,7 @@ You can protect your data using tools that are provided by AWS\. AWS Elemental M
   Challenges: You must work with a third party \(the key provider\)\.
 
 **Note**  
-Encryption is supported only for entitlements and for sources and outputs that use the Zixi protocol\.
+Encryption is supported only for entitlements, for sources that use the Zixi protocol, and for outputs that use the Zixi protocol\.
 
 **Topics**
 + [Static key encryption in AWS Elemental MediaConnect](encryption-static-key.md)
