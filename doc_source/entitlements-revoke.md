@@ -1,6 +1,8 @@
 # Revoking an entitlement<a name="entitlements-revoke"></a>
 
-After you revoke an entitlement, the content becomes unavailable to the subscriber account and the associated output is removed from your flow\.
+After you revoke an entitlement, the content becomes unavailable to the subscriber account permanently\. The entitlement and the associated output are removed from your flow\. 
+
+If you want to stop streaming content to the subscriber’s flow temporarily, [disable](entitlements-disable.md) the entitlement instead\. 
 
 **To revoke an entitlement \(console\)**
 

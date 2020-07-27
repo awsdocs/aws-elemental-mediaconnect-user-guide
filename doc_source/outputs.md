@@ -4,6 +4,9 @@ Each flow can have up to 50 outputs\. You can add and remove outputs at any time
 
 Another way that you can add outputs to a flow is from an entitlement\. You can [grant an entitlement](entitlements-grant.md) to share your content with another AWS account \(subscriber account\)\. When the subscriber creates a flow using your content as the source, AWS Elemental MediaConnect generates an output on your flow\.
 
+**Note**  
+If you [disable](entitlements-disable.md) an entitlement after the subscriber creates a flow based on that entitlement, the associated output remains on your flow\. This output continues to counts toward your maximum number of outputs\. To delete an output that's associated with an entitlement, [revoke](entitlements-revoke.md) the entitlement\.
+
 **Topics**
 + [Adding outputs to a flow](outputs-add.md)
 + [Viewing a list of outputs of a flow](outputs-view-list.md)

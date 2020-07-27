@@ -69,6 +69,8 @@ Amazon's trademarks and trade dress may not be used in
       + [Updating an entitlement](entitlements-update.md)
       + [Managing tags on an entitlement](entitlements-manage-tags.md)
       + [Revoking an entitlement](entitlements-revoke.md)
+      + [Disabling an entitlement temporarily](entitlements-disable.md)
+      + [Enabling an entitlement that has been temporarily disabled](entitlements-enable.md)
    + [Subscribing to content provided by another AWS account](entitlements-subscriber.md)
 + [VPC interfaces](vpc-interfaces.md)
    + [Adding a VPC interface to a flow](vpc-interface-add.md)

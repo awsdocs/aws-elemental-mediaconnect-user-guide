@@ -33,6 +33,8 @@ Before you can grant an entitlement, you must do the following:
 **Note**  
 Even if you specify that the subscriber is responsible for a portion or all of the entitlement data transfer fee, the subscriber will not incur fees until he or she creates and starts a flow that is based on this entitlement\.
 
+1. For **Entitlement status**, specify whether you want the entitlement enabled or disabled\. If the entitlement is enabled, the subscriber can create a flow based on the entitlement and start streaming content right away\. If the entitlement is disabled, the subscriber must wait for you to enable it before content can stream from your flow to their flow\.
+
 1. If you want to encrypt the video as it is sent from your flow to the subscriber's flow, choose one of the following tabs:
 
 ------
