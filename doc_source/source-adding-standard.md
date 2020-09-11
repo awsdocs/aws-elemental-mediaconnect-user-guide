@@ -16,7 +16,7 @@ You can add a second source to an existing flow for failover\. Both sources on t
 **Note**  
 If you enable failover on a flow that is running, you might encounter a brief interruption in the flow output\. 
 
-1. For **Recovery window**, specify the size of the buffer \(delay\) that you want the service to maintain\. A larger buffer means a longer delay in transmitting the stream, but more room for error correction\. A smaller buffer means a shorter delay, but less room for error correction\. You can choose a value from 100–500 ms\. If you keep this field blank, MediaConnect uses the default value of 200 ms\.
+1. For **Recovery window**, specify the size of the buffer \(delay\) that you want the service to maintain\. A larger buffer means a longer delay in transmitting the stream, but more room for error correction\. A smaller buffer means a shorter delay, but less room for error correction\. You can choose a value from 100–15000 ms\. If you keep this field blank, MediaConnect uses the default value of 200 ms\.
 
 1. Choose **Update**\.
 
