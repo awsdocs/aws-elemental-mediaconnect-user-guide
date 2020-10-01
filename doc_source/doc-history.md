@@ -4,6 +4,7 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
+| [Reservations](reservations.md) | You can now purchase reservations, which provide a disconted hourly rate in exchange for a commitment to use a specific amount of outbound bandwidth each month over the course of a specified duration\. | September 30, 2020 | 
 | [Disabling entitlements](entitlements-disable.md) | You can now disable an entitlement to temporarily stop streaming content to the subscriber’s flow\. When you're ready to reinstate access, you can enable the entitlement\. | July 24, 2020 | 
 | [Source health metrics](monitor-source-health.md) | In the MediaConnect console, you can view Amazon CloudWatch metrics that show the health of the source over a period of time\.  | May 11, 2020 | 
 | [VPC outputs](outputs-add-vpc.md) | You can now add an output to send content from your AWS Elemental MediaConnect flow to your VPC without going over the public internet\. | April 7, 2020 | 

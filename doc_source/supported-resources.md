@@ -4,6 +4,7 @@ The following resources in AWS Elemental MediaConnect support tagging:
 + Flows
 + Entitlements
 + Outputs
++ Reservations
 
 For information about adding and managing tags, see [Managing tags](tagging-add-edit-delete.md)\.
 
