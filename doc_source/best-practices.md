@@ -11,6 +11,7 @@ For the best performance and availability, follow best practices when you config
 + Because packet loss is present on any network, even in fully managed networks such as the AWS Cloud, you should create and manage redundant connections throughout your workflows\. In MediaConnect, there are multiple ways to add redundancy to your workflow:
   + Create flows in at least two different Availability Zones\.
   + [Add a second source](source-adding.md) to each flow\. If there are errors in the stream, MediaConnect can use packets from a redundant source or switch to the redundant source completely\.
++ We recommend that your organization create a VPC specifically for all AWS Media Services\. A single VPC will help to ensure the availability of IP addresses, help in setting up appropriate rules in the security groups, and help to ensure that a network administrator doesn't accidentally delete elastic network interfaces\.
 
 ## Reliability<a name="best-practices-reliability"></a>
 + Set up Amazon CloudWatch metrics and alarms to track the health of your source\. For information about which metrics to monitor, see [Monitoring and tagging](monitor.md)\.

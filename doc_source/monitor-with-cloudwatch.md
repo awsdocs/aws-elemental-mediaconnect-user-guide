@@ -16,7 +16,7 @@ Metrics are grouped first by the service namespace, and then by the various dime
 
 1. Choose the metric dimension to view the metrics \(for example, choose `flow` to view metrics per flow\)\.
 
-**To view metrics using the AWS CLI**
+**To view a list of valid metrics stored for your AWS account using the AWS CLI**
 + At a command prompt, use the following command:
 
   ```

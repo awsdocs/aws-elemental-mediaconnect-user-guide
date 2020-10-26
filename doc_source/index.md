@@ -109,6 +109,7 @@ Amazon's trademarks and trade dress may not be used in
 + [Monitoring and tagging in AWS Elemental MediaConnect](monitor.md)
    + [Logging AWS Elemental MediaConnect API calls with AWS CloudTrail](logging-using-cloudtrail.md)
    + [Monitoring AWS Elemental MediaConnect with Amazon CloudWatch metrics](monitor-with-cloudwatch.md)
+      + [AWS Elemental MediaConnect metrics to monitor flow health](monitor-with-cloudwatch-metrics-flow-health.md)
       + [AWS Elemental MediaConnect metrics to monitor source health](monitor-with-cloudwatch-metrics-source-health.md)
       + [AWS Elemental MediaConnect metrics to monitor output health](monitor-with-cloudwatch-metrics-output-health.md)
       + [Using metrics to troubleshoot](monitor-with-cloudwatch-metrics-troubleshooting.md)
