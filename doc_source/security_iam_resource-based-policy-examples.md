@@ -41,7 +41,11 @@ To access the AWS Elemental MediaConnect console, you must have a policy that de
                 "iam:PassRole"
             ],
             "Effect": "Allow",
-            "Resource": "*"
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "iam:PassedToService": "mediaconnect.amazonaws.com"
+            }
         }
     ]
 }
@@ -85,7 +89,11 @@ Every user of AWS Elemental MediaConnect must have a policy that defines permiss
                 "iam:PassRole"
             ],
             "Effect": "Allow",
-            "Resource": "*"
+            "Resource": "*",
+            "Condition": {
+                "StringLike": {
+                    "iam:PassedToService": "mediaconnect.amazonaws.com"
+            }
         }
     ]
 }
