@@ -4,6 +4,9 @@ When another AWS account \(originator account\) grants an entitlement to your AW
 
 You can use an entitlement only once\.
 
+**Note**  
+MediaConnect suppresses null packets in an effort to optimize the data connection between the content originator's flow and the subscriber's flow\. This can result in a fluctuating bitrate on the subscriber's flow, or a difference between the bitrate of the content originator's flow and the subscriber’s flow\. We recommend that you monitor source health as a combination of `SourceBitRate` and other metrics such as `SourceContinuityCounter` and `SourceNotRecoveredPackets`\.
+
 **Prerequisites**  
 Before you can create your flow, you must do the following:
 + Obtain the following information from the content originator:

@@ -100,6 +100,8 @@ Even if you specify that the subscriber is responsible for a portion or all of t
    + The AWS Region that you created the flow in
    + The encryption key and algorithm if you set up encryption on the entitlement
    + The percentage of the entitlement data transfer fee that the subscriber is responsible for
+**Note**  
+MediaConnect suppresses null packets in an effort to optimize the data connection between the content originator's flow and the subscriber's flow\. This can result in a fluctuating bitrate on the subscriber's flow, or a difference between the bitrate of the content originator's flow and the subscriber’s flow\. We recommend that you monitor source health as a combination of `SourceBitRate` and other metrics such as `SourceContinuityCounter` and `SourceNotRecoveredPackets`\.
 
 **To grant an entitlement on a flow \(AWS CLI\)**
 
