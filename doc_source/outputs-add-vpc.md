@@ -55,37 +55,6 @@ The RTP\-FEC protocol requires two additional ports for error correction\. To ac
    1. For **Output to VPC**, choose the name of the VPC interface that you want to send your output to\.
 
 ------
-#### [ Zixi pull ]
-
-   1. For **Protocol**, choose **Zixi pull**\. 
-
-   1. For **Stream ID**, enter the stream ID that is set in the Zixi receiver\.
-**Important**  
-If you keep this field blank, the service uses the output name as the stream ID\. Because the stream ID must match the value that is set in the Zixi receiver, you must specify the stream ID if it is not exactly the same as the output name\.
-
-   1. For **Remote ID**, enter the identifier that is assigned to the receiver\.
-
-   1. For **Maximum latency**, specify the size of the buffer \(delay\) that you want the service to maintain\. A higher latency value means a longer delay in transmitting the stream, but more room for error correction\. A lower latency value means a shorter delay, but less room for error correction\. You can choose a value between 0 and 60,000 ms\. If you keep this field blank, the service uses the latency that is set in the receiver\.
-
-   1. For **CIDR allow list**, specify a range of IP addresses that are allowed to retrieve content from your source\. Format the IP addresses as a Classless Inter\-Domain Routing \(CIDR\) block, for example, 10\.24\.34\.0/23\. For more information about CIDR notation, see [RFC 4632](https://tools.ietf.org/html/rfc4632)\.
-**Tip**  
-To specify an additional CIDR block, choose **Add**\. You can specify up to three CIDR blocks\.
-
-   1. For **Output to VPC**, choose the name of the VPC interface that you want to send your output to\.
-
-   1. If you want to encrypt the video as it is sent to this output, do the following:
-
-      1. In the **Encryption** section, choose **Enable**\.
-
-      1. For **Encryption type**, choose **Static key**\.
-
-      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
-
-      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
-
-      1. For **Encryption algorithm**, choose the type of encryption that you want to use to encrypt the source\.
-
-------
 #### [ Zixi push ]
 
    1. For **Protocol**, choose **Zixi push**\. 
