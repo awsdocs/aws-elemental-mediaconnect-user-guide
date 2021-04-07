@@ -10,4 +10,5 @@ Each source on a flow must use a different port\. \(The exception is sources tha
 | RIST | Port and port\+1 |  The port that you specify, plus one additional port\. MediaConnect automatically reserves a port that is \+1 from the port that you specified\. For example, if you specify port 3000 for this output, the service also reserves port 3001\.  | 
 | RTP | Port | The port that you specify\. This is the only port needed for the output\. | 
 | RTP\-FEC | Port, port\+2, and port\+4 |  The port that you specify, plus two additional ports\. MediaConnect automatically reserves ports that are \+2 and \+4 from the port that you specified\. For example, if you specify port 2000 for this output, the service also reserves ports 2002 and 2004 for error correction\.  | 
+| SRT\-listener | Port | The port that you specify\. This is the only port needed for the source\. | 
 | Zixi push | Port \(2088\) | MediaConnect automatically uses port 2088 for these outputs\. | 

@@ -1,7 +1,7 @@
 # AWS Elemental MediaConnect User Guide
 
 -----
-*****Copyright &copy; 2021 Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy;  Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -63,6 +63,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Managing tags on an output](outputs-manage-tags.md)
    + [Removing outputs from a flow](outputs-remove.md)
    + [Output destinations](destinations.md)
+   + [Determining an output's IP address](output-ip-address.md)
 + [Entitlements in AWS Elemental MediaConnect](entitlements.md)
    + [Sharing content with other AWS accounts](entitlements-originator.md)
       + [Granting an entitlement on a flow](entitlements-grant.md)

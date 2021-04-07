@@ -37,7 +37,7 @@ All sources on a flow must use the same protocol\. However, you can have one sou
 
    1. For **Protocol**, choose **RIST**\. 
 
-   1. For **Ingest port**, specify the port that the flow listens on for incoming content\. 
+   1. For **Inbound port**, specify the port that the flow listens on for incoming content\. 
 **Note**  
 The RIST protocol requires one additional port for error correction\. To accommodate this requirement, MediaConnect reserves the port that is \+1 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000 and 4001\.
 
@@ -54,7 +54,7 @@ Specify a CIDR block that is as precise as possible\. Include only the IP addres
 
    1. For **Protocol**, choose **RTP** or **RTP\-FEC**\. 
 
-   1. For **Ingest port**, specify the port that the flow listens on for incoming content\.
+   1. For **Inbound port**, specify the port that the flow listens on for incoming content\.
 **Note**  
 The RTP\-FEC protocol requires two additional ports for error correction\. To accommodate this requirement, MediaConnect reserves the ports that are \+2 and \+4 from the port that you specify\. For example, if you specify port 4000 for the output, the service assigns ports 4000, 4002, and 4004\. 
 
@@ -65,11 +65,34 @@ Specify a CIDR block that is as precise as possible\. Include only the IP addres
    1. For **Maximum bitrate**, specify the maximum expected bitrate \(in bits per second\) for the flow\. We recommend that you specify a value that is twice the actual bitrate\.
 
 ------
+#### [ SRT \- listener ]
+
+   1. For **Protocol**, choose **SRT\-listener**\. 
+
+   1. For **Inbound port**, specify the port that the flow listens on for incoming content\. 
+
+   1. For **Whitelist CIDR**, specify a range of IP addresses that are allowed to contribute content to your source\. Format the IP addresses as a Classless Inter\-Domain Routing \(CIDR\) block, for example, 10\.24\.34\.0/23\. For more information about CIDR notation, see [RFC 4632](https://tools.ietf.org/html/rfc4632)\.
+**Important**  
+Specify a CIDR block that is as precise as possible\. Include only the IP addresses that you want to contribute content to your flow\. If you specify a CIDR block that is too wide, it allows for the possibility of outside parties sending content to your flow\.
+
+   1. For **Source description**, enter a description that will remind you later where this source is from\. This might be the company name or notes about the setup\.
+
+   1. For **Maximum bitrate**, specify the maximum expected bitrate \(in bits per second\) for the flow\. We recommend that you specify a value that is twice the actual bitrate\.
+
+   1. For **Minimum latency**, specify the minimum size of the buffer \(delay\) that you want the service to maintain\. A higher latency value means a longer delay in transmitting the stream, but more room for error correction\. A lower latency value means a shorter delay, but less room for error correction\. You can choose a value from 100–15,000 ms\. If you keep this field blank, MediaConnect uses the default value of 2,000 ms\. 
+
+   1. If the source is encrypted, choose **Enable** in the **Decryption** section and do the following:
+
+      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
+
+      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
+
+------
 #### [ Zixi push ]
 
    1. For **Protocol**, choose **Zixi push**\. 
 
-      AWS Elemental MediaConnect populates the value of the ingest port\.
+      AWS Elemental MediaConnect populates the value of the inbound port\.
 
    1. For **Whitelist CIDR**, specify a range of IP addresses that are allowed to contribute content to your source\. Format the IP addresses as a Classless Inter\-Domain Routing \(CIDR\) block, for example, 10\.24\.34\.0/23\. For more information about CIDR notation, see [RFC 4632](https://tools.ietf.org/html/rfc4632)\.
 **Important**  

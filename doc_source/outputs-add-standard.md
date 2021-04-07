@@ -51,6 +51,27 @@ The RTP\-FEC protocol requires two additional ports for error correction\. To ac
    1. For **Smoothing latency**, specify the additional delay that you want to use with output smoothing\. We recommend that you specify a value of 0 ms to disable smoothing\. However, if the receiver can't process the stream properly, specify a value between 100 and 1,000 ms\. This way, AWS Elemental MediaConnect attempts to correct jitter from the flow source\. If you keep this field blank, the service uses the default value of 0 ms\.
 
 ------
+#### [ SRT\-listener ]
+
+   1. For **Protocol**, choose **SRT\-listener**\. 
+
+   1. For **Minimum latency**, specify the minimum size of the buffer \(delay\) that you want the service to maintain\. A higher latency value means a longer delay in transmitting the stream, but more room for error correction\. A lower latency value means a shorter delay, but less room for error correction\. You can choose a value from 100–15,000 ms\. If you keep this field blank, MediaConnect uses the default value of 2,000 ms\. 
+
+   1. For **CIDR allow list**, specify a range of IP addresses that are allowed to view content from your output\. Format the IP addresses as a Classless Inter\-Domain Routing \(CIDR\) block, for example, 10\.24\.34\.0/23\. For more information about CIDR notation, see [RFC 4632](https://tools.ietf.org/html/rfc4632)\.
+**Important**  
+Specify a CIDR block that is as precise as possible\. Include only the IP addresses that you want to contribute content to your flow\. If you specify a CIDR block that is too wide, it allows for the possibility of outside parties sending content to your flow\.
+
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
+
+   1. If you want to encrypt the video as it is sent to this output, do the following:
+
+      1. In the **Encryption** section, choose **Enable**\.
+
+      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
+
+      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
+
+------
 #### [ Zixi pull ]
 
    1. For **Protocol**, choose **Zixi pull**\. 

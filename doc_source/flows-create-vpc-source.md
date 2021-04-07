@@ -75,6 +75,27 @@ The RTP\-FEC protocol requires two additional ports for error correction\. To ac
    1. For **Maximum bitrate**, specify the maximum expected bitrate \(in bits per second\) for the flow\. We recommend that you specify a value that is twice the actual bitrate\.
 
 ------
+#### [ SRT \- listener ]
+
+   1. For **Protocol**, choose **SRT \- listener**\. 
+
+   1. For **Inbound port**, specify the port that the flow listens on for incoming content\.
+
+   1. For **VPC interface name**, choose the name of the VPC interface that you want to use as the source\.
+
+   1. For **Source description**, enter a description that will remind you later where this source is from\. This might be the company name or notes about the setup\.
+
+   1. For **Maximum bitrate**, specify the maximum expected bitrate \(in bits per second\) for the flow\. We recommend that you specify a value that is twice the actual bitrate\.
+
+   1. For **Minimum latency**, specify the size of the buffer \(delay\) that you want the service to maintain\. A higher latency value means a longer delay in transmitting the stream, but more room for error correction\. A lower latency value means a shorter delay, but less room for error correction\. You can choose a value from 100 \-15,000 ms\. If you keep this field blank, the service uses the default value of 2,000 ms\. 
+
+   1. If the source is encrypted, choose **Enable** in the **Decryption** section and do the following:
+
+      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
+
+      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
+
+------
 #### [ Zixi push ]
 
    1. For **Protocol**, choose **Zixi push**\. 

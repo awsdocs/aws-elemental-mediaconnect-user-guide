@@ -55,6 +55,25 @@ The RTP\-FEC protocol requires two additional ports for error correction\. To ac
    1. For **Output to VPC**, choose the name of the VPC interface that you want to send your output to\.
 
 ------
+#### [ SRT\-listener ]
+
+   1. For **Protocol**, choose **SRT\-listener**\. 
+
+   1. For **Minimum latency**, specify the minimum size of the buffer \(delay\) that you want the service to maintain\. A higher latency value means a longer delay in transmitting the stream, but more room for error correction\. A lower latency value means a shorter delay, but less room for error correction\. You can choose a value from 100–15,000 ms\. If you keep this field blank, MediaConnect uses the default value of 2,000 ms\. 
+
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
+
+   1. For **Output to VPC**, choose the name of the VPC interface that you want to send your output to\.
+
+   1. If you want to encrypt the video as it is sent to this output, do the following:
+
+      1. In the **Encryption** section, choose **Enable**\.
+
+      1. For **Role ARN**, specify the ARN of the role that you created when you [set up encryption](encryption-static-key-set-up.md#encryption-static-key-set-up-create-iam-role)\.
+
+      1. For **Secret ARN**, specify the ARN that AWS Secrets Manager assigned when you [created the secret to store the encryption key](encryption-static-key-set-up.md#encryption-static-key-set-up-store-key)\.
+
+------
 #### [ Zixi push ]
 
    1. For **Protocol**, choose **Zixi push**\. 

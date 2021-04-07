@@ -14,3 +14,4 @@ If you [disable](entitlements-disable.md) an entitlement after the subscriber cr
 + [Managing tags on an output](outputs-manage-tags.md)
 + [Removing outputs from a flow](outputs-remove.md)
 + [Output destinations](destinations.md)
++ [Determining an output's IP address](output-ip-address.md)
