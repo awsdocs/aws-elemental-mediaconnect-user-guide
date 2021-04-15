@@ -2,7 +2,7 @@
 
 Source failover is a setup that involves two redundant sources for a flow\. Additionally, MediaConnect must receive content from each source at the same time\. 
 
-When you enable source failover and specify two sources for a flow, MediaConnect treats both sources as the primary\. Neither source is considered a backup of the other\. Sources used this way need to be *binary identical*, which typically means that they need to have originated from the same encoder\. Additionally, if the sources use RTP protocol, they must have RTP headers with aligned sequence numbers and they must also comply with the SMPTE\-2022\-7 standard\. 
+When you enable source failover and specify two sources for a flow, MediaConnect treats both sources as the primary\. Neither source is considered a backup of the other\. Sources used this way need to be *binary identical*, which means that they need to have originated from the same encoder\. Additionally, if the sources use RTP protocol, they must have RTP headers with aligned sequence numbers and they must also comply with the SMPTE\-2022\-7 standard\. 
 
 **Note**  
 SMPTE 2022\-7 is a standard developed by the Society of Motion Picture and Television Engineers \(SMPTE\) group\. The SMPTE 2022\-7 standard defines a method that replaces missing packets with packets in an identical, redundant stream\. This type of failover requires a small latency buffer in your workflow to allow time for MediaConnect to recover packets from the two streams\.

@@ -11,27 +11,13 @@ For flows that use listener protocols \(such as Zixi pull or SRT listener\), the
 ------
 #### [ Public internet ]
 
-   1. In the **Details** section, review the **Public outbound IP address**\. This is the IP address that the receiver needs\.
+   1. In the **Details** section, note the **Public outbound IP address**\. This is the IP address that the receiver needs\.
 
 ------
 #### [ Private internet ]
 
-   1. Choose the **Outputs** tab, and then choose the output that you want to view\.
+   1. Choose the **Outputs** tab, and then locate the output that you want to view\.
 
-   1. Choose **Details**, and then locate the **Output to VPC** value\. 
-
-   1. Choose **Cancel**\.
-
-   1. Choose the **VPC interfaces** tab\.
-
-   1. In the VPC interface section, locate the **Network interface** value\.
-
-   1. Open the Amazon EC2 console at [https://console\.aws\.amazon\.com/ec2/](https://console.aws.amazon.com/ec2/)\.
-
-   1. In the navigation pane, choose **Network Interfaces**\.
-
-   1. Select the network interface, and then choose **Details**\.
-
-   1. Locate the IP address that the receiver needs\.
+   1. Under **Listener address** for that output, note the IP address\. This is the IP address that the receiver needs\.
 
 ------
