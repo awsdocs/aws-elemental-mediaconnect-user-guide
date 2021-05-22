@@ -1,12 +1,14 @@
 # Adding a VPC source to an existing flow<a name="source-adding-vpc"></a>
 
-You can add a second source to an existing flow for failover\. Both sources on the flow must be binary identical \(come from the same encoder\) and they must use the same protocol\. \(However, you can have one source that uses RTP and the other that uses RTP\-FEC\.\) For more information about source failover, see [Source failover](source-failover.md)\.
+You can add a second source to an existing transport stream flow for failover\. Both sources on the flow must be binary identical \(come from the same encoder\) and they must use the same protocol\. \(However, you can have one source that uses RTP and the other that uses RTP\-FEC\.\) For more information about source failover, see [Source failover](source-failover.md)\.
 
 **Important**  
 Before you begin this procedure, make sure that the following steps have been completed:  
 In Amazon VPC, set up your VPC and associated security groups\. For more information about VPCs, see the [Amazon VPC User Guide](https://docs.aws.amazon.com/vpc/latest/userguide/)\. For information about configuring security groups to work with your VPC interface, see [Security group considerations](vpc-interface-security-groups.md)\.
 In IAM, [set up MediaConnect as a trusted service](security-iam-trusted-entity.md)\.
 If the source of your flow requires encryption, [set up encryption](encryption-static-key-set-up.md)\.
+
+MediaConnect doesn't support two sources on CDI flows\. For redundancy with ST 2110 JPEG XS sources, you can specify two inbound VPC interfaces on an individual media stream\. For redundancy with CDI sources, create a second flow\.
 
 **To add a VPC source to an existing flow \(console\)**
 

@@ -1,6 +1,6 @@
-# Creating a flow that uses a VPC source<a name="flows-create-vpc-source"></a>
+# Creating a transport stream flow that uses a VPC source<a name="flows-create-vpc-source"></a>
 
-A flow consists of one source, a name, and an Availability Zone\. The ability to choose an Availability Zone allows you to create multiple flows within an AWS Region for redundancy\. After you create a flow, you can add up to 50 outputs and up to 50 entitlements\.
+Transport stream flows transport compressed content that is muxed into a single stream\.
 
 When you create a flow that uses a source from your virtual private cloud \(VPC\), your content does not go over the public internet\. This is useful for security reasons as well as reliability\. You set up your VPC and then create a flow that has an interface to that VPC\. Alternatively, you can create a flow based on an entitlement that another AWS account granted to allow you to use their content \([entitled source](flows-create-entitled-source.md)\) or a [standard source](flows-create-standard-source.md)\.
 
@@ -10,7 +10,7 @@ In Amazon VPC, set up your VPC and associated security groups\. For more informa
 In IAM, [set up MediaConnect as a trusted service](security-iam-trusted-entity.md)\.
 If the source of your flow requires encryption, [set up encryption](encryption-static-key-set-up.md)\.
 
-**To create a flow that uses a VPC source \(console\)**
+**To create a transport stream flow that uses a VPC source \(console\)**
 
 1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 
@@ -21,20 +21,6 @@ If the source of your flow requires encryption, [set up encryption](encryption-s
 MediaConnect allows you to create multiple flows with the same name\. However, we encourage you to use unique flow names within an AWS Region to help with organization\. After you create a flow, you can't change the name\.
 
 1. For **Availability Zone**, choose **Any** or choose the Availability Zone where your VPC subnet resides\. We recommend that you leave this as **Any** and let the service ensure that the Availability Zone is set correctly\. 
-
-1. In the **VPC interface** section, choose **Add VPC interface**\.
-
-1. For **Name**, specify a name for your VPC interface\. The name of the VPC interface must be unique within the flow\.
-
-1. For **Role ARN**, specify the Amazon Resource Name \(ARN\) of the role that you created when you set up MediaConnect as a trusted service\.
-
-1. For **VPC**, choose the ID of the VPC that you want to use\.
-**Note**  
-If you don't see the VPC that you want in the list, verify that the VPC has been set up in Amazon Virtual Private Cloud and that you have IAM permissions to view the VPC\.
-
-1. For **Subnet**, choose the VPC subnet that you want MediaConnect to use to set up your VPC configuration\. You must choose at least one and can choose as many as you want\.
-
-1. For **Security groups**, specify the VPC security groups that you want MediaConnect to use to set up your VPC configuration\. You must choose at least one security group\.
 
 1. In the **Source** section, for **Source type**, choose **VPC source**\.
 
@@ -121,6 +107,22 @@ If you leave this field blank, the service uses the source name as the stream ID
       1. For **Decryption algorithm**, choose the type of encryption that was used to encrypt the source\.
 
 ------
+
+1. For each VPC that you want to connect to the flow, do the following: 
+
+   1. In the **VPC interface** section, choose **Add VPC interface**\.
+
+   1. For **Name**, specify a name for your VPC interface\. The name of the VPC interface must be unique within the flow\.
+
+   1. For **Role ARN**, specify the Amazon Resource Name \(ARN\) of the role that you created when you set up MediaConnect as a trusted service\.
+
+   1. For **VPC**, choose the ID of the VPC that you want to use\.
+**Note**  
+If you don't see the VPC that you want in the list, verify that the VPC has been set up in Amazon Virtual Private Cloud and that you have IAM permissions to view the VPC\.
+
+   1. For **Subnet**, choose the VPC subnet that you want MediaConnect to use to set up your VPC configuration\. You must choose at least one and can choose as many as you want\.
+
+   1. For **Security groups**, specify the VPC security groups that you want MediaConnect to use to set up your VPC configuration\. You must choose at least one security group\.
 
 1. At the bottom of the page, choose **Create flow**\.
 **Note**  

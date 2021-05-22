@@ -4,7 +4,8 @@ The following table describes the documentation for this release of AWS Elementa
 
 | Change | Description | Date | 
 | --- |--- |--- |
-| [Listener address](output-ip-address.md) | For flows that use Listener protocols, you can now easily locate an output's outbound IP address for a private internet\. | April 14, 2021 | 
+| [CDI workflows](use-cases-cdi.md) | MediaConnect now supports JPEG XS for AWS Cloud Digital Interface \(AWS CDI\) uncompressed workflows\.  | May 17, 2021 | 
+| [Listener address](output-ip-address.md) | For flows that use listener protocols, you can now easily locate an output's outbound IP address for a private internet\. | April 14, 2021 | 
 | [SRT\-listener sources and outputs](protocols.md) | You can now use the SRT\-listener protocol for sources and outputs\.  | March 16, 2021 | 
 | [Reservations](reservations.md) | You can now purchase reservations, which provide a disconted hourly rate in exchange for a commitment to use a specific amount of outbound bandwidth each month over the course of a specified duration\. | September 30, 2020 | 
 | [Disabling entitlements](entitlements-disable.md) | You can now disable an entitlement to temporarily stop streaming content to the subscriber’s flow\. When you're ready to reinstate access, you can enable the entitlement\. | July 24, 2020 | 
@@ -12,7 +13,7 @@ The following table describes the documentation for this release of AWS Elementa
 | [VPC outputs](outputs-add-vpc.md) | You can now add an output to send content from your AWS Elemental MediaConnect flow to your VPC without going over the public internet\. | April 7, 2020 | 
 | [VPC sources](vpc-interfaces.md) | You can now connect your VPC to your AWS Elemental MediaConnect flow and send content to your flow without going over the public internet\. | March 31, 2020 | 
 | [Source failover](source-failover.md) | You can now enable source failover and add a second \(redundant\) source to your flow\. | March 13, 2020 | 
-| [Service quotas \(outputs\)](quotas.md) | You can now add up to 50 outputs to each flow\. | February 7, 2020 | 
+| [Service quotas \(outputs\)](quotas.md) | You can now add up to 50 outputs to each transport stream flow\. | February 7, 2020 | 
 | [Sharing the entitlement data transfer fee with the subscriber](entitlements-grant.md) | When you grant an entitlement, you can now specify the percentage of the entitlement data transfer fee that you want the subscriber to be responsible for\. | September 16, 2019 | 
 | [RIST sources and outputs](protocols.md) | You can now use the RIST protocol for sources and outputs\. | September 11, 2019 | 
 | [Zixi pull outputs](outputs-add.md) | You can now add outputs that use the Zixi pull protocol\. | July 26, 2019 | 

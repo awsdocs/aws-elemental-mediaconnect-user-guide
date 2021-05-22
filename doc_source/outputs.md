@@ -1,8 +1,8 @@
-# Outputs in AWS Elemental MediaConnect<a name="outputs"></a>
+# Outputs in MediaConnect<a name="outputs"></a>
 
-Each flow can have up to 50 outputs\. You can add and remove outputs at any time, even when the flow is active\. These outputs are sent to the IP address that you specify\. This option is useful if you intend to send your content to an on\-premises encoder\.
+Outputs are the different destinations where you want MediaConnect to send the content of your flow\. You can add and remove outputs at any time, even when the flow is active\. These outputs are sent to the IP address that you specify\. This option is useful if you intend to send your content to an on\-premises encoder\.
 
-Another way that you can add outputs to a flow is from an entitlement\. You can [grant an entitlement](entitlements-grant.md) to share your content with another AWS account \(subscriber account\)\. When the subscriber creates a flow using your content as the source, AWS Elemental MediaConnect generates an output on your flow\.
+For transport stream flows, you can [grant an entitlement](entitlements-grant.md) to share your content with another AWS account \(subscriber account\)\. When the subscriber creates a flow using your content as the source, AWS Elemental MediaConnect generates an output on your flow\.
 
 **Note**  
 If you [disable](entitlements-disable.md) an entitlement after the subscriber creates a flow based on that entitlement, the associated output remains on your flow\. This output continues to counts toward your maximum number of outputs\. To delete an output that's associated with an entitlement, [revoke](entitlements-revoke.md) the entitlement\.

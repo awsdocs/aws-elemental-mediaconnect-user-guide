@@ -1,8 +1,8 @@
-# Creating a flow that uses an entitled source<a name="flows-create-entitled-source"></a>
+# Creating a transport stream flow that uses an entitled source<a name="flows-create-entitled-source"></a>
 
-A flow consists of one source, a name, and an Availability Zone\. The ability to choose an Availability Zone allows you to create multiple flows within an AWS Region for redundancy\. After you create a flow, you can add up to 50 outputs and up to 50 entitlements\.
+Transport stream flows transport compressed content that is muxed into a single stream\. An entitled source is content that comes from another AWS account\. 
 
-**To create a flow that uses an entitled source \(console\)**
+**To create a transport stream flow that uses an entitled source \(console\)**
 
 1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 

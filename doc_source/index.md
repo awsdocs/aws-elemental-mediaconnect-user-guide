@@ -1,7 +1,7 @@
 # AWS Elemental MediaConnect User Guide
 
 -----
-*****Copyright &copy;  Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
+*****Copyright &copy; Amazon Web Services, Inc. and/or its affiliates. All rights reserved.*****
 
 -----
 Amazon's trademarks and trade dress may not be used in 
@@ -15,15 +15,17 @@ Amazon's trademarks and trade dress may not be used in
 -----
 ## Contents
 + [What is AWS Elemental MediaConnect?](what-is.md)
-   + [AWS Elemental MediaConnect concepts and terminology](what-is-concepts.md)
+   + [MediaConnect concepts and terminology](what-is-concepts.md)
    + [Related services](what-is-related-services.md)
-   + [Accessing AWS Elemental MediaConnect](what-is-accessing.md)
-   + [Pricing for AWS Elemental MediaConnect](what-is-pricing.md)
-   + [Regions and endpoints for AWS Elemental MediaConnect](what-is-regions.md)
+   + [Accessing MediaConnect](what-is-accessing.md)
+   + [Pricing for MediaConnect](what-is-pricing.md)
+   + [Regions and endpoints for MediaConnect](what-is-regions.md)
 + [AWS Elemental MediaConnect use cases](use-cases.md)
-   + [Use case: contribution](use-cases-contribution.md)
    + [Use case: distribution](use-cases-distribution.md)
    + [Use case: entitlements](use-cases-entitlements.md)
+   + [Use case: contribution for transport stream flows](use-cases-contribution.md)
+   + [Use case: Contribution for CDI flows](use-cases-cdi.md)
+   + [Use case: replication and monitoring for CDI flows](use-cases-cdi-replication-monitoring.md)
 + [Setting up AWS Elemental MediaConnect](setting-up.md)
    + [Step 1. Sign Up for AWS](setting-up-aws-sign-up.md)
    + [Step 2. Create an admin IAM user](setting-up-IAM-admin-user.md)
@@ -36,9 +38,10 @@ Amazon's trademarks and trade dress may not be used in
 + [Getting started with AWS Elemental MediaConnect](getting-started.md)
 + [Flows in AWS Elemental MediaConnect](flows.md)
    + [Creating a flow](flows-create.md)
-      + [Creating a flow that uses a standard source](flows-create-standard-source.md)
-      + [Creating a flow that uses a VPC source](flows-create-vpc-source.md)
-      + [Creating a flow that uses an entitled source](flows-create-entitled-source.md)
+      + [Creating a transport stream flow that uses a standard source](flows-create-standard-source.md)
+      + [Creating a transport stream flow that uses an entitled source](flows-create-entitled-source.md)
+      + [Creating a transport stream flow that uses a VPC source](flows-create-vpc-source.md)
+      + [Creating a CDI flow](flows-create-cdi.md)
    + [Viewing a list of flows](flows-view-list.md)
    + [Viewing the details of a flow](flows-view-details.md)
    + [Starting a flow](flows-start.md)
@@ -54,7 +57,7 @@ Amazon's trademarks and trade dress may not be used in
    + [Updating the source of a flow](source-update.md)
    + [Removing a source from a flow](source-remove.md)
    + [Source ports](source-ports.md)
-+ [Outputs in AWS Elemental MediaConnect](outputs.md)
++ [Outputs in MediaConnect](outputs.md)
    + [Adding outputs to a flow](outputs-add.md)
       + [Adding standard outputs to a flow](outputs-add-standard.md)
       + [Adding VPC outputs to a flow](outputs-add-vpc.md)
@@ -77,6 +80,10 @@ Amazon's trademarks and trade dress may not be used in
    + [Adding a VPC interface to a flow](vpc-interface-add.md)
    + [Removing a VPC interface from a flow](vpc-interface-remove.md)
    + [Security group considerations for VPC interfaces](vpc-interface-security-groups.md)
++ [Media streams in AWS Elemental MediaConnect](media-streams.md)
+   + [Adding a media stream to a flow](media-stream-add.md)
+   + [Updating a media stream](media-stream-update.md)
+   + [Removing a media stream](media-stream-remove.md)
 + [Reservations for AWS Elemental MediaConnect](reservations.md)
    + [Viewing reservations](reservations-view.md)
    + [Offerings](offerings.md)
@@ -121,7 +128,7 @@ Amazon's trademarks and trade dress may not be used in
       + [Supported resources in AWS Elemental MediaConnect](supported-resources.md)
       + [Tag naming and usage conventions](tagging-restrictions.md)
       + [Managing tags](tagging-add-edit-delete.md)
-+ [Best practices for AWS Elemental MediaConnect](best-practices.md)
++ [Best practices for MediaConnect](best-practices.md)
 + [Quotas in AWS Elemental MediaConnect](quotas.md)
 + [AWS Elemental MediaConnect related information](resources.md)
 + [Document history for user guide](doc-history.md)

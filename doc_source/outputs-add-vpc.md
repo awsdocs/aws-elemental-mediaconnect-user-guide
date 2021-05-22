@@ -1,6 +1,8 @@
 # Adding VPC outputs to a flow<a name="outputs-add-vpc"></a>
 
-You can add up to 50 outputs for each flow in AWS Elemental MediaConnect\. A VPC output goes to a virtual private cloud \(VPC\) that you created using Amazon Virtual Private Cloud\.
+A VPC output goes to a virtual private cloud \(VPC\) that you created using Amazon Virtual Private Cloud\.
+
+For transport stream flows, you can add outputs \(up to 50\) even if the flow is active\. For CDI flows, you can add outputs \(up to 10\) only if the flow is in standby mode\. For optimal performance, follow the guidance offered in [Best practices](best-practices.md)\. 
 
 **To add a VPC output to a flow \(console\)**
 
@@ -18,9 +20,13 @@ You can add up to 50 outputs for each flow in AWS Elemental MediaConnect\. A VPC
 
 1. For **Output type**, choose **VPC output**\.
 
+1. For **Protocol**, choose the appropriate protocol\.
+
 1. For **Description**, enter a description that will remind you later where this output is going\. This might be the company name or notes about the setup\.
 
-1. Determine which protocol you want to use for the output\.
+1. Determine which protocol you want to use for the output\. The protocol options are dependent on the flow type\.
+   + For transport stream flows, the protocol options are: RTP, RTP\-FEC, RIST, SRT, and Zixi\.
+   + For CDI flows, the protocol options are: CDI and ST 2110 JPEG XS\.
 
 1. For specific instructions based on the protocol that you want to use, choose one of the following tabs:
 
@@ -103,5 +109,52 @@ If you keep this field blank, the service uses the output name as the stream ID\
       1. For **Encryption algorithm**, choose the type of encryption that you want to use to encrypt the source\.
 
 ------
+#### [ CDI ]
 
-1. Choose **Add output**\.
+   1. For **Protocol**, choose **CDI**\. 
+
+   1. For **IP address**, choose the IP address where you want to send the output\.
+
+   1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
+
+   1. For **VPC interface**, choose the name of the VPC interface that you want to send your output to\.
+
+   1. For each media stream that you want to send as part of the output, do the following:
+
+      1. For **Media stream name**, choose the name of the media stream\. You can only add the media streams that the source on your flow uses\.
+
+      1. For **Encoding name**, confirm the default value, which is pre\-selected based on the media stream type\.
+
+      1. For **FMT**, specify the format type number \(sometimes referred to as *RTP payload type*\) of the media stream\. This value should be in a format that the receiver recognizes\.
+
+------
+#### [ ST 2110 JPEG XS ]
+
+   1. For **Protocol**, choose **ST 2110 JPEG XS**\. 
+
+   1. For **VPC interface 1**, choose one of the VPC interfaces that you want to send content to and then choose the specific IP address where you want to send the output\.
+
+   1. For **VPC interface 2**, choose a second VPC interface that you want to send content to and then choose the specific IP address where you want to send the output\. There is no priority between VPC interfaces 1 and 2\.
+
+   1. For each media stream that you want to send as part of the output, do the following:
+
+      1. For **Media stream name**, choose the name of the media stream\. You can only add the media streams that the source on your flow uses\.
+
+      1. For **Encoding name**, choose the format that was used to encode the data\.
+         + For ancillary data streams, set the encoding name to **smpte291**\.
+         + For audio streams, set the encoding name to **pcm**\.
+         + For video, set the encoding name to **jxsv**\.
+
+      1. For **Port**, choose the port that you want to use when the content is distributed to this output\. For more information about ports, see [Output destinations](destinations.md)\.
+
+      1. For **Encoder profile**, choose a setting for the compression\. This property only applies if the source uses the CDI protocol\. 
+
+      1. For **Compression factor**, specify a value that you want the service to use when calculating the compression for the output\. Valid values are floating point numbers in the range of 3\.0 to 10\.0, inclusive The bitrate of the output is calculated as follows:
+
+         Output bitrate = \(1 / compressionFactor\) \* \(source bitrate\)
+
+         This property only applies if the source uses the CDI protocol\.
+
+   1. Choose **Add output**\.
+
+------

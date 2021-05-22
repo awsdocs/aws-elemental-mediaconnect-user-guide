@@ -12,6 +12,8 @@ You can view a flow's details, such as ARN, Availability Zone, status, source, e
    + The **Source** tab shows details about the source for this flow, including an indication of whether the flow is connected to the source\. 
    + The **Outputs** tab shows details for each output that you created for this flow\.
    + The **Entitlements** tab shows any entitlements that you have granted on this flow\.
+   + The **VPC interfaces** tab shows a list of connections that this flow has with virtual private clouds \(VPCs\) based on the Amazon Virtual Private Cloud \(Amazon VPC\) service\.
+   + The **Media streams** tab shows a list of media streams that have been created on this flow\. Each media stream represents a different component of a video such as video, audio, ancillary data\.
    + The **Alerts** tab shows a log of active alerts on this flow\. 
 
 **To view the details of a flow \(AWS CLI\)**

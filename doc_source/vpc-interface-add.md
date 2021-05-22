@@ -17,6 +17,10 @@ In IAM, [set up MediaConnect as a trusted service](security-iam-trusted-entity.m
 
 1. For **Name**, specify a name for your VPC interface\. The name of the VPC interface must be unique within the flow\.
 
+1. For **Network interface type**, specify the type of network adapter that you want MediaConnect to use on this interface\. If you don't set this value, it defaults to **ENA**\.
+**Note**  
+You can add only one EFA VPC interface to a particular flow\. There is no limit for ENA VPC interfaces\.
+
 1. For **Role ARN**, specify the Amazon Resource Name \(ARN\) of the role that you created when you set up MediaConnect as a trusted service\.
 
 1. For **VPC**, choose the ID of the VPC that you want to use\.

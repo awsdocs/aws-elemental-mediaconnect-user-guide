@@ -7,8 +7,8 @@ The following table describes quotas, formerly referred to as *limits*, in AWS E
 | --- | --- | --- | 
 | Entitlements | 50 per flow | The maximum number of entitlements that you can grant on a flow\. | 
 | Flows | 20 per AWS Region |  The maximum number of flows that you can create in each AWS Region\. You can [request a quota increase](https://console.aws.amazon.com/servicequotas/home?region=us-east-1#!/services/mediaconnect/quotas)\.  | 
-| Outputs | 50 per flow | The maximum number of outputs that a flow can have\. | 
-| Sources | 2 per flow | The maximum number of sources that a flow can have\. | 
+| Outputs |  50 per transport stream flow 10 per CDI flow  | The maximum number of outputs that a flow can have\. | 
+| Sources |  2 per transport stream flow 1 per CDI flow  | The maximum number of sources that a flow can have\. | 
 | VPC interfaces | 2 per flow | The maximum number of VPC interfaces that a flow can have\. | 
 
 **Note**  

@@ -9,11 +9,11 @@ Before you can create a flow with an encrypted source or an output or entitlemen
 **[Step 3](#encryption-static-key-set-up-create-iam-role)** – Create an IAM role and attach the policy that you created in step 2\. Next, set up AWS Elemental MediaConnect as a trusted entity that is allowed to assume this role and make requests on behalf of your account\.
 
 **Note**  
-Static key encryption is supported only for entitlements, and for sources and outputs that use the Zixi protocol\.
+MediaConnect supports encryption only for entitlements, and for sources and outputs that use the Zixi and SRT protocols\. Your stored key in Secrets Manager for the Zixi protocol is a static key in a hexadecimal format\. SRT uses a passkey for encryption\.
 
 ## Step 1: Store your encryption key in AWS Secrets Manager<a name="encryption-static-key-set-up-store-key"></a>
 
-To use static key encryption to encrypt your AWS Elemental MediaConnect content, you must create a secret in AWS Secrets Manager to store your encryption key\. You also must use the same AWS account to create the secret that you use to create the AWS Elemental MediaConnect resource \(source, output, or entitlement\) that uses the secret\. AWS Elemental MediaConnect does not support cross\-account sharing of secrets\.
+To use static key encryption to encrypt your AWS Elemental MediaConnect content, you must use AWS Secrets Manager to create a secret that stores the encryption key\. You must create the secret, and the resource \(source, output, or entitlement\) that uses the secret in the same AWS account\. You can’t share secrets across accounts\.
 
 **Note**  
  If you use two flows to distribute video from one AWS Region to another, you must create two secrets \(one secret in each Region\)\. 

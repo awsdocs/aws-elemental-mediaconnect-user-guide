@@ -21,7 +21,8 @@ The following IAM policy allows read access to specific resources \(secrets\) th
                 "secretsmanager:GetResourcePolicy",
                 "secretsmanager:GetSecretValue",
                 "secretsmanager:DescribeSecret",
-                "secretsmanager:ListSecretVersionIds"
+                "secretsmanager:ListSecretVersionIds",
+                "secretsmanager:ListSecrets"
             ],
             "Resource": [
                 "arn:aws:secretsmanager:us-west-2:111122223333:secret:aes128-1a2b3c",
@@ -47,7 +48,8 @@ The following IAM policy allows read access to all secrets that you create in a 
                 "secretsmanager:GetResourcePolicy",
                 "secretsmanager:GetSecretValue",
                 "secretsmanager:DescribeSecret",
-                "secretsmanager:ListSecretVersionIds"
+                "secretsmanager:ListSecretVersionIds",
+                "secretsmanager:ListSecrets"
             ],
             "Resource": [
                 "arn:aws:secretsmanager:us-west-2:111122223333:secret:*"
@@ -71,7 +73,8 @@ The following IAM policy allows read access to all resources that you create in 
                 "secretsmanager:GetResourcePolicy",
                 "secretsmanager:GetSecretValue",
                 "secretsmanager:DescribeSecret",
-                "secretsmanager:ListSecretVersionIds"
+                "secretsmanager:ListSecretVersionIds",
+                "secretsmanager:ListSecrets"
             ],
             "Resource": [
                 "*"

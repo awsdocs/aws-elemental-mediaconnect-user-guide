@@ -1,13 +1,13 @@
-# Creating a flow that uses a standard source<a name="flows-create-standard-source"></a>
+# Creating a transport stream flow that uses a standard source<a name="flows-create-standard-source"></a>
 
-A flow consists of one source, a name, and an Availability Zone\. The ability to choose an Availability Zone allows you to create multiple flows within an AWS Region for redundancy\. After you create a flow, you can add up to 50 outputs and up to 50 entitlements\.
+Transport stream flows transport compressed content that is muxed into a single stream\. 
 
 A flow uses a *standard* source when the content comes from anywhere other than a VPC \([VPC source](flows-create-vpc-source.md)\) or another AWS account \([entitled source](flows-create-entitled-source.md)\)\.
 
 **Important**  
 If the source of your flow requires encryption, [set up encryption](encryption-static-key-set-up.md) before you begin this procedure\. 
 
-**To create a flow that uses a standard source \(console\)**
+**To create a transport stream flow that uses a standard source \(console\)**
 
 1. Open the MediaConnect console at [https://console\.aws\.amazon\.com/mediaconnect/](https://console.aws.amazon.com/mediaconnect/)\.
 

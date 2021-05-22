@@ -11,6 +11,9 @@ After you grant an entitlement, you provide information about the entitlement \(
 
 ![\[This illustration shows the setup for sharing content across AWS Regions.\]](http://docs.aws.amazon.com/mediaconnect/latest/ug/)
 
+**Note**  
+You can only grant entitlements on transport stream flows\. MediaConnect doesn't support entitlements on CDI flows\.
+
 **Topics**
 + [Granting an entitlement on a flow](entitlements-grant.md)
 + [Updating an entitlement](entitlements-update.md)

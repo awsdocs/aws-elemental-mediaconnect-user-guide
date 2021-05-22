@@ -17,8 +17,8 @@ With AWS Elemental MediaConnect, you can do the following:
 + Send content from one AWS Region to another\.
 
 **Topics**
-+ [AWS Elemental MediaConnect concepts and terminology](what-is-concepts.md)
++ [MediaConnect concepts and terminology](what-is-concepts.md)
 + [Related services](what-is-related-services.md)
-+ [Accessing AWS Elemental MediaConnect](what-is-accessing.md)
-+ [Pricing for AWS Elemental MediaConnect](what-is-pricing.md)
-+ [Regions and endpoints for AWS Elemental MediaConnect](what-is-regions.md)
++ [Accessing MediaConnect](what-is-accessing.md)
++ [Pricing for MediaConnect](what-is-pricing.md)
++ [Regions and endpoints for MediaConnect](what-is-regions.md)
